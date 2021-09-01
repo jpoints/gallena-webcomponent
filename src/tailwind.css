@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+a{
+    @apply text-secondary
+}
+
+footer li a{
+    @apply text-white hover:text-secondary hover:underline
+}
+
+.fa,.fab {
+    @apply text-secondary p-2
+}
+
+.bars li+li { 
+    @apply border-l border-primary border-solid;
+}
+
+.sidenav li{
+    @apply p-2 text-secondary hover:bg-primary hover:text-white
+}
+
+.sidenav li:hover a {
+    @apply text-current
+}

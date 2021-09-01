@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:ouc="http://omniupdate.com/XSL/Variables">
+<channel>
+<title>Gallena News Feed</title>
+<link>http://www.omniupdate.com/</link>
+<description>The general news feed for Gallena University.</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 28 Apr 2021 13:31:36 -0700</lastBuildDate>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>OmniUpdate (OU Publish)</generator>
+
+<item>
+<title>Summer BBQ</title>
+<link>https://rich.oudemo.com/news/summer-bbq-2021.html</link>
+<description>Gallena University Alumni and their families are invited to attend the annual Alumni Campus Fair and BBQ on November 18, 2020.</description>
+<author>Rich Paul &lt;rpaul@omniupdate.com&gt;</author>
+<pubDate>Wed, 28 Apr 2021 13:31:36 -0700</pubDate>
+<category>featured home</category>
+<category>admissions</category>
+<category>news</category>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/bbq.jpg">
+<media:title>Summer BBQ</media:title>
+<media:description>Gallena University Alumni and their families are invited to attend the annual Alumni Campus Fair and BBQ on November 18, 2020.</media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/bbq.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+<featured></featured>
+</item>
+<item>
+<title>Winter BBQ</title>
+<link>https://rich.oudemo.com/news/winter-bbq.html</link>
+<description>Come join us</description>
+<author>Rich Paul &lt;rpaul@omniupdate.com&gt;</author>
+<pubDate>Mon, 06 Jan 2020 12:18:02 -0800</pubDate>
+<category>academics</category>
+<category>featured home</category>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/bbq.jpg">
+<media:title>Winter BBQ</media:title>
+<media:description>Come join us</media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/bbq.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+<featured></featured>
+</item>
+<item>
+<title>Fall BBQ Festival</title>
+<link>https://rich.oudemo.com/news/fallbbq.html</link>
+<description>All Gallena Friends &amp; Family are welcome to join us on campus October 27th for our annual Fall BBQ. This is a great new way to get to know Gallena University. We host all the food to give you the chance to get to know us.</description>
+<author>Rich Paul &lt;rpaul@omniupdate.com&gt;</author>
+<pubDate>Fri, 03 Nov 2017 15:06:46 -0700</pubDate>
+<category>featured</category>
+<category>featured home</category>
+<category>news</category>
+<category>admissions</category>
+<media:content url="https://rich.oudemo.com/news/images/bbq.jpg">
+<media:title>Fall BBQ Festival</media:title>
+<media:description>All Gallena Friends &amp; Family are welcome to join us on campus October 27th for our annual Fall BBQ. This is a great new way to get to know Gallena University. We host all the food to give you the chance to get to know us.  </media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/bbq.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+<featured></featured>
+</item>
+<item>
+<title>Campus Fair BBQ</title>
+<link>https://rich.oudemo.com/news/campus-fair-bbq.html</link>
+<description>Future Students and their families are invited to attend the annual Campus Fair on December 1.</description>
+<author>Rich Paul &lt;rpaul@omniupdate.com&gt;</author>
+<pubDate>Tue, 25 Oct 2016 11:06:23 -0700</pubDate>
+<category>admissions</category>
+<category>news</category>
+<media:content url="https://rich.oudemo.com/news/images/bbq.jpg">
+<media:title>Campus Fair BBQ</media:title>
+<media:description>Future Students and their families are invited to attend the annual Campus Fair on December 1.</media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/bbq.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+<featured></featured>
+</item>
+<item>
+<title>Alumni Campus Fair</title>
+<link>https://jeremy.oudemo.com/news/alumni-campus-fair.html</link>
+<description>Gallena Alumni and their families are invited to attend the annual Alumni Campus Fair on January 1</description>
+<author>automation</author>
+<pubDate>Tue, 14 Jun 2016 17:12:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/_resources/images/campus/west_campus.png">
+<media:title>Alumni Campus Fair</media:title>
+<media:description>Alumni Campus Fair</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/_resources/images/campus/west_campus.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>New Greek Fraternity</title>
+<link>https://jeremy.oudemo.com/news/new-greek-frat-joins-gu.html</link>
+<description>This fall, the Lambda Omicron Lambda fraternity joins the 12-chapter Interfraternity Council here at Gallena University.</description>
+<author>automation</author>
+<pubDate>Tue, 05 Apr 2016 01:00:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/new-frat.png">
+<media:title>Greek Frat</media:title>
+<media:description>Greek Frat</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/new-frat.png"></media:thumbnail>
+<media:keywords>Greek Frat</media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Winter Food Festival</title>
+<link>https://rich.oudemo.com/news/winter-food-festival.html</link>
+<description>All Gallena Friends &amp; Family are welcome to join us on campus December 19th for our annual Winter BBQ. This is a great new way to get to know Gallena University. We host a spring food festival to give you the chance to get to know us.</description>
+<author>automation</author>
+<pubDate>Fri, 15 Apr 2016 00:00:00 -0800</pubDate>
+<category>fair</category>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/free-food.jpg">
+<media:title>food</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/free-food.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Women's Volleyball Wins Conference</title>
+<link>https://rich.oudemo.com/news/womens-volleyball-wins-conference.html</link>
+<description>The Lady Gophers fought with hand and foot to win the conference finals this weekend against Rocky Flats University Rebels, claiming their third championship in five years.</description>
+<author>automation</author>
+<pubDate>Tue, 01 Mar 2016 17:14:00 -0800</pubDate>
+<category>athletics</category>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/volleyball.png">
+<media:title>volleyball</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/volleyball.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Study Abroad Information</title>
+<link>https://rich.oudemo.com/news/study-abroad-informational-meeting.html</link>
+<description>All Gallena friends and family are welcome to join us on campus for our annual semester abroad discussion.</description>
+<author>automation</author>
+<pubDate>Fri, 01 Jul 2016 17:14:00 -0800</pubDate>
+<category>featured</category>
+<category>admissions</category>
+<media:content url="https://rich.oudemo.com/news/images/study-abroad-meeting.png">
+<media:title>study abroad</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/study-abroad-meeting.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Free Food in Student Union</title>
+<link>https://rich.oudemo.com/news/free-food-in-student-union.html</link>
+<description>In preparation for finals, the Student Association of Gallena University is giving students a free meal in the Student Union.</description>
+<author>automation</author>
+<pubDate>Fri, 10 Jun 2016 12:14:00 -0800</pubDate>
+<category>featured</category>
+<category>spotlight</category>
+<media:content url="https://rich.oudemo.com/news/images/free-food.jpg">
+<media:title>food</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/free-food.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Surprise Concert in Student Union Next Month</title>
+<link>https://rich.oudemo.com/news/concert-in-student-union.html</link>
+<description>The Student Association of Gallena University has announced a surprise concert for incoming students next month in the Student Union, but don't expect to find out who it is just yet.</description>
+<author>automation</author>
+<pubDate>Fri, 01 Apr 0016 17:14:00 -0800</pubDate>
+<media:content url="https://rich.oudemo.com/news/images/concert-in-student-union.png">
+<media:title>concert</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/concert-in-student-union.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Baseball's Fritz Pitches No-Hitter on the Road</title>
+<link>https://rich.oudemo.com/news/fritz-pitches-no-hitter.html</link>
+<description>Ted Fritz's pitch-perfect no-hitter against the Redding College propelled the Gophers to first-place with a 4-0 final score.</description>
+<author>automation</author>
+<pubDate>Tue, 01 Mar 2016 17:14:00 -0800</pubDate>
+<category>athletics</category>
+<media:content url="https://rich.oudemo.com/news/images/fritz-no-hitter.jpg">
+<media:title>baseball</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/fritz-no-hitter-thumb.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Gallena Gophers Take First Place!</title>
+<link>https://rich.oudemo.com/news/gophers-take-first.html</link>
+<description>Gallena University's men's 4-man rowing team recently took first place at the prestigious California Cup competition.</description>
+<author>automation</author>
+<pubDate>Sat, 09 Jan 2016 17:14:00 -0800</pubDate>
+<category>athletics</category>
+<category>spotlight</category>
+<media:content url="https://rich.oudemo.com/news/images/gopher-football.jpg">
+<media:title>gophers</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/gopher-football.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>New Greek Fraternity</title>
+<link>https://rich.oudemo.com/news/new-greek-frat-joins-gu.html</link>
+<description>This fall, the Lambda Omicron Lambda fraternity joins the 12-chapter Interfraternity Council here at Gallena University.</description>
+<author>automation</author>
+<pubDate>Sat, 11 Jun 2016 13:00:00 -0800</pubDate>
+<category>spotlight</category>
+<category>admissions</category>
+<category>greek</category>
+<category>frat</category>
+<media:content url="https://rich.oudemo.com/news/images/new-frat.png">
+<media:title>frat</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/new-frat.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Gallena Celebrates 80 Years</title>
+<link>https://rich.oudemo.com/news/gallena-celebrates-80-years.html</link>
+<description>Gallena University celebrates 80 years of academic excellence. Gallena University is a private University which was founded in 1931.</description>
+<author>automation</author>
+<pubDate>Thu, 01 Dec 2016 17:14:00 -0800</pubDate>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/gallena-celebrates.jpg">
+<media:title>gallena celebrates</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/gallena-celebrates.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+<featured>true</featured>
+</item>
+<item>
+<title>Art Faculty to Unveil New Exhibit</title>
+<link>https://rich.oudemo.com/news/art-faculty-to-unveil-new-exhibit.html</link>
+<description>Four art professors have teamed up to unveil a new exhibit in the newly renovated downtown Gallena.</description>
+<author>automation</author>
+<pubDate>Thu, 01 Dec 2016 00:00:00 -0800</pubDate>
+<category>featured</category>
+<media:content url="https://rich.oudemo.com/news/images/new-art-exhibit.jpg">
+<media:title>art exibit</media:title>
+<media:description></media:description>
+<media:thumbnail url="https://rich.oudemo.com/news/images/new-art-exhibit.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>First Place Gophers</title>
+<link>https://jeremy.oudemo.com/news/gophers-take-first.html</link>
+<description>Gallena University's men's 4-man rowing team recently took first place at the prestigious California Cup competition.  The 2011 California Cup competition was held last week in the San Francisco Bay just north of the Golden Gate Bridge.</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 17:12:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/gopher-football.jpg">
+<media:title>Gophers take first place</media:title>
+<media:description>Gophers take first place</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/gopher-football.jpg"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Study Abroad Informational Meeting</title>
+<link>https://jeremy.oudemo.com/news/study-abroad-informational-meeting.html</link>
+<description>All Gallena friends and family are welcome to join us on campus for our annual semester abroad discussion.</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 16:49:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/concert-in-student-union.png">
+<media:title>Study Abroad</media:title>
+<media:description>Study Abroad</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/concert-in-student-union.png"></media:thumbnail>
+<media:keywords>Study Abroad</media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Free Food in Student Union</title>
+<link>https://jeremy.oudemo.com/news/free-food-in-student-union.html</link>
+<description>In preparation for finals, the Student Association of Gallena University is giving students a free meal in the Student Union.</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 16:49:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/free-food.jpg">
+<media:title>free food</media:title>
+<media:description>free food</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/free-food.jpg"></media:thumbnail>
+<media:keywords>free food</media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Concert in Student Union</title>
+<link>https://jeremy.oudemo.com/news/concert-in-student-union.html</link>
+<description>The Student Association of Gallena University has announced a surprise concert for incoming students</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 16:49:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/concert-in-student-union.png">
+<media:title>concert</media:title>
+<media:description>concert</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/concert-in-student-union.png"></media:thumbnail>
+<media:keywords></media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>Gallena Celebrates 80 Years</title>
+<link>https://jeremy.oudemo.com/news/gallena-celebrates-80-years.html</link>
+<description>Gallena University celebrates 80 years of academic excellence. Gallena University is a private University</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 16:49:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/gallena-celebrates.jpg">
+<media:title>80 years</media:title>
+<media:description>80 years</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/gallena-celebrates.jpg"></media:thumbnail>
+<media:keywords>80 years</media:keywords>
+</media:content>
+
+</item>
+<item>
+<title>New Art Exhibit</title>
+<link>https://jeremy.oudemo.com/news/art-faculty-to-unveil-new-exhibit.html</link>
+<description>Four art professors have teamed up to unveil a new exhibit in the newly renovated downtown Gallena.</description>
+<author>automation</author>
+<pubDate>Fri, 09 Jan 2015 16:49:00 -0800</pubDate>
+<media:content url="https://jeremy.oudemo.com/news/images/new-art-exhibit.jpg">
+<media:title>art</media:title>
+<media:description>art</media:description>
+<media:thumbnail url="https://jeremy.oudemo.com/news/images/new-art-exhibit.jpg"></media:thumbnail>
+<media:keywords>art</media:keywords>
+</media:content>
+
+</item>
+
+
+</channel>
+</rss>
