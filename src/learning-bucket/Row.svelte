@@ -1,5 +1,5 @@
 <svelte:options tag="mc-row" />
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <script>
     let customClass;
@@ -11,4 +11,4 @@
     <slot></slot>
 </div>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />

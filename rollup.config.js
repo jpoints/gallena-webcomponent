@@ -33,7 +33,7 @@ function serve() {
 
 //abstracted for future use may require targeting certain folders.
 let target = "src/main.js";
-let output = "public/build/components.js"
+let output = "public/omni-cms/components.js"
 
 export default {
 	input: target,

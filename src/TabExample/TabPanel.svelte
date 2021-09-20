@@ -1,15 +1,35 @@
-<svelte:options tag="mc-tabpanel" />
+<svelte:options tag="mc-panel" />
 
 <script>
-	import { getContext } from 'svelte';
-	import { TABS } from '../TabExample/Tabs.svelte';
+	import { get_current_component } from 'svelte/internal';
+	import { onMount, tick } from 'svelte';
+	const component = get_current_component();
 
-	const panel = {};
-	const { registerPanel, selectedPanel } = getContext(TABS);
+	export let test = "before";
+	export let active = "false";
+	export let name ="";
 
-	registerPanel(panel);
+	let content;
+
+	onMount(async () => {
+		await tick();//I want this to fire after other components load
+		component.setAttribute("name",name);
+		component.setAttribute("active",active);
+		const event = new Event('register-panel', {detail: "test",bubbles: true,cancelable: true,composed:true});
+		component.dispatchEvent(event);
+	});
+	
+	function setActive(){
+		active = "true";
+		const event = new Event('active', {detail: "test",bubbles: true,cancelable: true,composed:true});
+		component.dispatchEvent(event);
+	}
 </script>
 
-{#if $selectedPanel === panel}
-	<slot></slot>
-{/if}
+<link rel="stylesheet" href="/omni-cms/app.css" />
+<slot class='{active === "true" ? "" : "hidden"}'></slot>
+
+<style>
+	
+</style>
+

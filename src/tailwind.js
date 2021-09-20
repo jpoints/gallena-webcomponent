@@ -32,6 +32,9 @@ let tailwindconfig = {
             minHeight:{
               'content':"50%"
             },
+            zIndex: {
+              '-10': '-10',
+             }
           },
           fontFamily:{
             sans:['Open Sans', 'arial','sans-serif']
@@ -51,11 +54,11 @@ function run_tailwind(purge) {
     postcss([precss, tailwindcss(tailwindconfig), autoprefixer, cssnano])
     .process(css, { from:'./src/custom.css', to: './dest/app.css' })
     .then(result => {
-        fs.writeFile('./public/app.css', result.css, () => true);
+        fs.writeFile('./public/omni-cms/app.css', result.css, () => true);
         let test = result.css.match(/(?:[\.]{1})([a-zA-Z_]+[\w-_]*)(?:[\s\.\,\{\>#\:]{0})/igm).join("").split(".").join("\n");
-        fs.writeFile('./public/class-list.txt', test, () => true);
+        fs.writeFile('./public/omni-cms/lass-list.txt', test, () => true);
         if ( result.map ) {
-            fs.writeFile('./public/app.css.map', result.map.toString(), () => true)
+            fs.writeFile('./public/omni-cms/app.css.map', result.map.toString(), () => true)
         }
         console.log("Tailwind complete");
     })

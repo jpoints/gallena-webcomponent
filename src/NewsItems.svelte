@@ -30,7 +30,6 @@
                             if(kid.tagName === 'media:content'){
                                 let media = Array.prototype.slice.call(kid.children);
                                 mediacontent = {"content" : kid.getAttribute("url")}
-                                console.log(kid);
                                 media.forEach(mediaitem => {
                                     let tag = mediaitem.tagName.split(":")[1]
                                     mediacontent[tag] = mediaitem.textContent;
@@ -38,9 +37,7 @@
                                 article.media.push(mediacontent);
                             }
                             else if(kid.tagName === 'category'){
-                                console.log(kid);
                                 article['category'] = `${article['category']},${kid.textContent}`;
-                                console.log(article['category']);
                             }
                             else{
                                 article[kid.tagName] = kid.textContent;
@@ -62,7 +59,6 @@
     onMount(async () => {
         feed = await getXML2json(path)
         loaded = true;
-        console.log(feed);
     })
 
 </script>
@@ -91,7 +87,7 @@
     {/if}
 </div>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <style>
 

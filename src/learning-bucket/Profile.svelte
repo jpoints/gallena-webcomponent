@@ -22,12 +22,11 @@
             throw err;
         }
         data = await getProfile(host,username);
-        console.log(data);
         loaded= true;
     })
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
     {#if loaded}
             <div class="p-6 bg-white flex items-center space-x-6 rounded-lg shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
@@ -51,7 +50,7 @@
                 </div>
         <div>
             <h1 class="text-xl font-bold text-gray-700 mb-2"></h1>
-             <p class="text-gray-600 w-80 text-sm">Title : </p>
+            <p class="text-gray-600 w-80 text-sm">Title : </p>
             <p class="text-gray-600 w-80 text-sm">Email : </p>
         </div>
         </div>

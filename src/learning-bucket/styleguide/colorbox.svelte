@@ -11,7 +11,7 @@
     }
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="flex flex-col items-center w-64 m-5 border-2 p-5">
 	<div on:load={event => texttype(event)} class="w-60 h-60 bg-{colorname} text-white flex flex-col justify-center items-center"></div>

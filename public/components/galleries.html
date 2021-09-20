@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script defer src='/omni-cms/components.js'></script>
+</head>
+
+<body class="h-screen bg-white w-full flex flex-col items-center">
+	<mc-design-sidepanel></mc-design-sidepanel>
+
+	<div class="p-20"></div>
+	
+	<mc-card class="flex flex-col w-full max-w-7xl h-auto flex">
+		<p>Adding json directly via a data attribute</p>
+		<section class="bg-white w-full max-w-7xl h-auto flex flex-row my-5">
+			<mc-gallery 
+				data='[{"url":"/img/really.jpg","title":"SEE GU","description":"Cant visit the campus in person? Take a virutal tour!"},{"url":"/img/thoughtful.jpg","title":"APPLY TODAY","description":"Your education is an investment for the future"},{"url":"/img/wow.jpg","title":"MAJOR FAIR","description":"Explore and learn where your major can take you"}]' 
+				class="w-full"
+			></mc-gallery>
+		</section>
+	</mc-card>
+
+	<mc-card class="flex flex-col w-full max-w-7xl h-auto flex">
+		<p>Create gallery from external json file. /galleries.json</p>
+		<section class="bg-white w-full max-w-7xl h-auto flex flex-row my-5">
+			<mc-gallery path="/data/gallery.json" class="w-full"></mc-gallery>
+		</section>
+	</mc-card>
+
+	<mc-card class="flex flex-col w-full max-w-7xl h-auto flex">
+		<p>Create gallery from external json file. /galleries.json</p>
+		<section class="bg-white w-full max-w-7xl h-auto flex flex-row my-5">
+			<mc-gallery2 src="/data/gallery.json" class="w-full"></mc-gallery2>
+		</section>
+	</mc-card>
+
+	<mc-card class="flex flex-col w-full max-w-7xl h-auto flex">
+		<p>Gallery created from a json data source inline</p>
+		<section class="bg-white w-full max-w-7xl h-auto flex flex-row my-5">
+			<mc-gallery2 
+				class="w-full" 
+				data='[{"url":"/img/really.jpg","title":"SEE GU","description":"Cant visit the campus in person? Take a virutal tour!"},{"url":"/img/thoughtful.jpg","title":"APPLY TODAY","description":"Your education is an investment for the future"},{"url":"/img/wow.jpg","title":"MAJOR FAIR","description":"Explore and learn where your major can take you"}]'
+			></mc-gallery2>
+		</section>
+	</mc-card>
+
+	
+</body>
+	
+</html>

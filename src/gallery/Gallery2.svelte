@@ -59,15 +59,15 @@
     }
 </script>
 
-<link rel="stylesheet" href="app.css" />
-<link rel="stylesheet" href="fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
 
     <div class="h-48 w-full md:w-full md:h-96 bg-black">
                 <div class="flex justify-center h-full w-full">
-                    <div class="flex justify-center items-center w-13 bg-white">
-                        <button class="text-white text-lg w-12 h-full bg-primary" on:click={prevItem}>
-                                <span class="fas fa-angle-left"></span>
+                    <div class="flex justify-center items-center w-13 bg-primary text-white">
+                        <button class="rounded-full w-12 h-full flex justify-center items-center" on:click={prevItem}>
+                               <span class="material-icons">navigate_before</span>
                         </button>
                     </div>
                     <div class="w-full flex flex-col justify-end items-start transition-opacity {opacity}" style='background-image: url({current.url});background-size: cover;'>
@@ -78,9 +78,9 @@
                             <p class="bg-black bg-opacity-70 text-white p-5">{current.description}</p>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center w-13 bg-white">
-                        <button class="text-white text-lg w-12 h-full bg-primary" on:click={nextItem}>
-                                <span class="fas fa-angle-right"></span>
+                    <div class="flex justify-center items-center w-13 bg-primary text-white">
+                        <button class="w-12 h-full flex justify-center items-center" on:click={nextItem}>
+                               <span class="material-icons">navigate_next</span>
                         </button>
                     </div>
                 </div>

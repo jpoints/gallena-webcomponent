@@ -5,7 +5,7 @@
     export { customClass as class };
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="flex flex-row bg-black text-white h-12 w-full {customClass}">
     <slot></slot>

@@ -11,13 +11,10 @@
     export let title = "Menu";
 
     function setActive(){
-        console.log(active)
         active = !active;
-        console.log(active)
     }
 
     function handleClickOutside(event) {
-        console.log("hello");
 		if(active){
             active = false;
            
@@ -32,7 +29,7 @@
 	}
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="relative mx-5" on:blur={handleClickOutside}>
 	<div class="h-full block" on:click={setActive}>

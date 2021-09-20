@@ -1,9 +1,10 @@
 <svelte:options tag="mc-navbar" />
 
 <script>
+    export let css = "/omni-cms/app.css";
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="{css}" />
 
 <section class="bg-secondary text-white w-full">
 		<div class="flex flex-row items-center mx-auto max-w-7xl">

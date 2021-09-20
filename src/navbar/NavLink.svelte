@@ -3,8 +3,8 @@
 <script>
 </script>
 
-<li class="relative h-full p-4 hover:bg-primary">
+<li class="flex relative h-full w-full p-4 hover:bg-primary">
         <slot></slot>
 </li>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />

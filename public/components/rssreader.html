@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script defer src='/omni-cms/components.js'></script>
+</head>
+
+<body class="h-screen bg-white w-full flex flex-col items-center">
+
+    <mc-design-sidepanel></mc-design-sidepanel>
+
+	
+    <mc-card class="w-5/12">
+        <p>Read the news.xml feed, and create 3 spotlight cards from it</p>
+        <mc-newsitems path="/data/news.xml" title="Spotlight" category="spotlight" total="3" class="w-1/2"></mc-newsitems>
+    </mc-card>
+
+    <mc-card class="w-5/12">
+        <p>Read the news.xml feed, and create 5 admission cards from it</p>
+        <mc-newsitems path="/data/news.xml" title="Admissions" category="admission" total="5" class="w-1/2"></mc-newsitems>
+    </mc-card>
+
+</body>
+	
+</html>

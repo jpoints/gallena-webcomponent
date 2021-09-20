@@ -14,7 +14,7 @@
 
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="flex flex-col h-1/3 justify-center items-center">
 	<div class="bg-primary text-white text-2xl w-full flex-grow flex items-center justify-center">Style Guide</div>

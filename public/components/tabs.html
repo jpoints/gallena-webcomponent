@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script defer src='/omni-cms/components.js'></script>
+</head>
+
+<body class="h-screen bg-white w-full flex flex-col items-center">
+
+    <mc-design-sidepanel></mc-design-sidepanel>
+        <mc-tabs>
+            <mc-tab class="bg-red-400" name="tab-1">one</mc-tab>
+            <mc-tab name="tab-2">two</mc-tab>
+            <mc-tab name="tab-3">three</mc-tab>
+            <mc-tab name="tab-4">four</mc-tab>
+            <mc-panel name="tab-1">
+                1: There can be only one
+            </mc-panel>
+            <mc-panel name="tab-2">
+                2: It takes two to dance
+            </mc-panel>
+            <mc-panel name="tab-3">
+                3: three blind mice, three blind mice
+            </mc-panel>
+            <mc-panel name="tab-4">
+                4: A golfer says, fore! not four.
+            </mc-panel>
+        </mc-tabs>
+
+    <mc-tabs class="m-10 shadow-xl">
+        <ul class="flex flex-row w-full justify-center items-center">
+            <li>
+                <mc-tab name="test0">test0</mc-tab>
+            </li>
+            <li>
+                <mc-tab name="test1">test1</mc-tab>
+            </li>
+            <li>
+                <mc-tab name="test2">test2</mc-tab>
+            </li>
+            <li>
+                <mc-tab name="test3">test3</mc-tab>
+            </li>
+        </ul>
+        <p class="p-5">Welcome to the world of web components</p>
+        <div class="shadow">
+            <mc-panel name="test0">
+                <mc-navbar></mc-navbar>
+            </mc-panel>
+            <mc-panel name="test1">	
+                <section class="p-2 w-full">
+                <div class="bg-gray-700 text-white m-auto max-w-7xl flex flex-col md:flex-row">
+                    <div class="flex flex-col md:w-2/3 p-5 text-center">
+                        <div class="text-2xl p-5">Why Gallena University</div>
+                        <div class="text-lg p-5">
+                            <p>Well, this university is super great because of all the cool things we do. Also, we have an amazing website supported by the top Web CMS for higher education. It's just tops!</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center items-center">
+                            <button class="bg-secondary rounded block w-3/4 py-5 my-2">Apply Now</button>
+                    </div>
+                </div>
+            </section>
+            </mc-panel>
+            <mc-panel name="test2">
+                <section class="bg-white w-full flex flex-row">
+                    <mc-gallery class="w-full" data='[{"url":"/img/really.jpg","title":"SEE GU","description":"Cant visit the campus in person? Take a virutal tour!"},{"url":"/img/thoughtful.jpg","title":"APPLY TODAY","description":"Your education is an investment for the future"},{"url":"/img/wow.jpg","title":"MAJOR FAIR","description":"Explore and learn where your major can take you"}]'></mc-gallery>
+                </section>
+            </mc-panel>
+            <mc-panel name="test3">
+                <div class="max-w-7xl flex flex-col justify-center items-center w-full bg-gray-200">
+                    <div>
+                        <h2 class="text-4xl font-bold p-5">WELCOME TO GALLENA.</h2>
+                    </div>
+                    <div class="flex w-1/2 text-lg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <div class="p-10">
+                        <button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button>
+                    </div>
+                </div>
+            </mc-panel>
+        </div>
+    </mc-tabs>
+	
+</body>
+	
+</html>

@@ -7,31 +7,20 @@
 	<title>Svelte app</title>
 
 	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link href="app.css" rel="stylesheet">
-	<link href="fontawesome/css/all.min.css" rel="stylesheet"/>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script defer src='/build/components.js'></script>
+	<script src='/omni-cms/components.js'></script>
+
+	<script>
+		window.onload = function() {
+			components();
+		};
+	</script>
 </head>
 
 <body class="h-screen bg-white w-full flex flex-col items-center">
-	<section class="bg-black text-white w-full">
-		<div class="flex flex-row items-center">
-			<ul class="flex">
-				<mc-navlink>
-					<a href="/index.html" class="text-white">Gallena</a>
-				</mc-navlink>
-				<mc-navlink>
-					<a href="/galleries.html" class="text-white">Galleries</a>
-				</mc-navlink>
-				<mc-navlink>
-					<a href="/navbar.html" class="text-white">Navbars</a>
-				</mc-navlink>
-				<mc-navlink>
-					<a href="/rssreader.html" class="text-white">RSS-Reader</a>
-				</mc-navlink>
-			</ul>
-		</div>
-	</section>
+	<mc-design-sidepanel></mc-design-sidepanel>
 	<section class="p-2 bg-primary w-full">
 		<div class="flex flex-col md:flex-row mx-auto max-w-7xl">
 			<form class="flex justify-end w-full" role='search'>
@@ -64,7 +53,7 @@
 	</section>
 	<mc-navbar class="w-full"></mc-navbar>
 	<section class="bg-white w-full max-w-7xl h-auto flex my-2 flex-row">
-		<mc-gallery class="w-full" data='[{"url":"/img/really.jpg","title":"SEE GU","description":"Cant visit the campus in person? Take a virutal tour!"},{"url":"/img/thoughtful.jpg","title":"APPLY TODAY","description":"Your education is an investment for the future"},{"url":"/img/wow.jpg","title":"MAJOR FAIR","description":"Explore and learn where your major can take you"}]'></mc-gallery>
+		<mc-gallery class="w-full" data='[{"url":"/img/really.jpg","title":"SEE GU","description":"Cant visit the campus in person? Take a virutal tour!"},{"url":"/img/thoughtful.jpg","title":"APPLY TODAY","description":"Your education is an investment for the future"},{"url":"/img/wow.jpg","title":"MAJOR FAIR","description":"Explore and learn where your major can take you"},]'></mc-gallery>
 	</section>
 	<section class="p-2 w-full">
 		<div class="bg-gray-700 text-white m-auto max-w-7xl flex flex-col md:flex-row">
@@ -83,8 +72,8 @@
 		<div class="md:w-2/3 flex flex-col mx-2">
 			<mc-featurednews></mc-featurednews>
 			<div class="flex flex-col md:flex-row my-5">
-				<mc-newsitems path="/news.xml" title="Events" category="admissions" total="3" class="md:w-1/2"></mc-newsitems>
-				<mc-newsitems path="/news.xml" title="Spotlight" category="spotlight" total="3" class="md:w-1/2"></mc-newsitems>
+				<mc-newsitems path="/data/news.xml" title="Events" category="admissions" total="3" class="md:w-1/2"></mc-newsitems>
+				<mc-newsitems path="/data/news.xml" title="Spotlight" category="spotlight" total="3" class="md:w-1/2"></mc-newsitems>
 			</div>
 		</div>
 		<div class="md:w-1/3 flex flex-col">

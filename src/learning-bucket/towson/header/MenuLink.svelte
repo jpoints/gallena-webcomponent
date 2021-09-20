@@ -6,7 +6,7 @@
     export { customClass as class };
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <li class="px-5 border-solid border-b-4 border-transparent {customClass}">
 	<div>

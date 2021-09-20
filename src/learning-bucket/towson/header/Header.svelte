@@ -3,7 +3,7 @@
 <script>
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="flex flex-row bg-black h-12">
     <div class="flex space-x-5 justify-center w-1/2">

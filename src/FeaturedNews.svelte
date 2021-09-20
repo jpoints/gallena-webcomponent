@@ -9,18 +9,16 @@
     function nextItem(){
         location = (location + 1) % test.length;
         current = test[location]
-        console.log(current)
     }
 
      function prevItem(){
         location = (location + test.length - 1) % test.length;
         current = test[location]
-        console.log(current)
     }
 </script>
 
-<link rel="stylesheet" href="app.css" />
-<link rel="stylesheet" href="fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="bg-gray-100 p-5 h-96 w-full shadow-lg">
     <div class="flex">
@@ -29,10 +27,10 @@
         </div>
         <div class="py-5 w-1/5 text-3xl text-primary flex justify-end items-right">
             <button class="hover:text-secondary p-2" on:click={prevItem}>
-                <span class="far fa-arrow-alt-circle-left"></span>
+                <span class="material-icons">arrow_back</span>
             </button>
             <button class="hover:text-secondary p-2" on:click={nextItem}>
-                <span class="far fa-arrow-alt-circle-right"></span>
+                <span class="material-icons">arrow_forward</span>
             </button>
         </div>
     </div>

@@ -3,7 +3,7 @@
 <script>
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 
 <section class="bg-secondary text-white w-full">

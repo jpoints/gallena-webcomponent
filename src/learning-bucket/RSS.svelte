@@ -46,7 +46,6 @@
     onMount(async () => {
         feed = await getXML2json(path)
         loaded = true;
-        console.log(feed);
     })
 
 </script>
@@ -66,7 +65,7 @@
     <p>Loading</p>
 {/if}
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <style>
 

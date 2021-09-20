@@ -5,15 +5,13 @@
     let active = false;
     let button;
     export let title = "Menu";
+    export let css = "/omni-cms/app.css";
 
     function setActive(){
-        console.log(active)
         active = !active;
-        console.log(active)
     }
 
     function handleClickOutside(event) {
-        console.log("hello");
 		if(active){
             active = false;
            
@@ -30,17 +28,15 @@
 
 <li class="relative h-full p-4 {active ? 'border-white bg-primary' : null} hover:bg-primary" on:blur={handleClickOutside}>
 	<div class="h-full block" on:click={setActive}>
-        <button bind:this={button} class="border-solid border-b-2 border-transparent text-white w-36 w-full text-center">  
+        <button bind:this={button} class="flex justify-center border-solid border-b-2 border-transparent text-white w-36 w-full text-center">  
             {title}
-            <span class="fas text-sm text-white {active ? 'fa-angle-down' : 'fa-angle-up'}"></span>
+            <span class="material-icons text-sm text-white">{active ? 'expand_more' : 'expand_less'}</span>
         </button>
     </div>
-    {#if active}
-    <div class="absolute top-14 -left-2 bg-white text-primary z-30 p-5 border-secondary border-4" use:clickOutside on:click_outside={handleClickOutside} on:press_escape={handleEscape} >
+    <div class="absolute top-14 -left-2 bg-white text-primary z-30 p-5 border-secondary border-4 {active ? null : 'hidden'}" use:clickOutside on:click_outside={handleClickOutside} on:press_escape={handleEscape} >
         <slot class="w-full shadow"></slot>
     </div>
-    {/if}
 </li>
 
-<link rel="stylesheet" href="app.css" />
-<link rel="stylesheet" href="fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="{css}" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

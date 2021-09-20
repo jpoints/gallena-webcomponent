@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script defer src='/omni-cms/components.js'></script>
+    <script>
+        var csspath = "/app5.css"
+    </script>
+</head>
+
+<body class="h-full bg-white w-full flex flex-col">
+
+    <mc-design-sidepanel></mc-design-sidepanel>
+    
+    <div class="bg-primary w-full h-12 px-10 flex px-20">
+        <div>
+            <ul class="flex h-full items-center bars">
+                <li><a class="text-white px-3 py-1 my-3 border-r" href="tel:12675026000">000-000-0000</a></li>
+                <li><a class="text-white px-3 py-1 my-3" href="mailto:admissions@gallena.edu">admissions@gallena.edu</a></li>
+             </ul>            
+        </div>
+        <div class="justify-self-end flex-grow h-full flex items-center">
+            <form class="flex justify-end w-full m-2" role='search'>
+				<input class="w-64 p-2 rounded-full h-6" type='search' aria-label="Search..." placeholder="Search..." id='header-search'/>
+			</form>
+        </div>
+    </div>
+
+    <div class="bg-primary text-white w-full px-10 flex px-20 h-24">
+                <div class="w-1/4">
+                    <img class="m-4 md:h-12 lg:h-16" src="/img/gu-logo.png" />
+                </div>
+                <nav class="flex flex-row w-full justify-end items-center">
+                    <ul class="flex spac-x-10 lg:space-x-20 text-sm xl:text-xl">
+                        <li>Home Page</li>
+                        <li>Interior Pages</li>
+                        <li>Faculty Pages</li>
+                        <li>News Pages</li>
+                        <li>Events Pages</li>
+                    </ul>
+                </nav>
+    </div>
+
+    <div class="bg-blue-300 w-full h-96 flex" style="height:50rem">
+        <div class="flex w-full">
+            <div class="w-4/5 bg-cover bg-center" style="background-image:url('/img/slider-image-4.png')"></div>
+            <div class="w-1/5 h-full bg-primary text-white flex flex-col justify-start px-5 py-10">
+                <div class="flex flew-row w-full h-1/6">
+                    <ul class="flex w-full justify-end space-x-5">
+                        <li>
+                            <button class="w-3 h-3 border-white border-2 rounded-full"></button>
+                        </li>
+                        <li>
+                            <button class="w-3 h-3 border-white border-2 rounded-full"></button>
+                        </li>
+                        <li>
+                            <button class="w-3 h-3 border-white border-2 rounded-full"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-3/6 flex items-end py-5 text-2xl text-bold">
+                    <div>Lorem ipsum dolor sit amet, consectetuer elit!</div>
+                </div>
+                <div class="h-1/6">
+                    <button class="rounded-full p-2 min-w-0 border-2 font-bold border-white">CALL TO ACTION</button>
+                </div>
+                <div class="h-1/6 flex justify-end items-end space-x-2">
+                    <div class="flex space-x-4">
+                        <button aria-label="Previous Slide"><span class="fas fa-arrow-left"></span></button>
+                        <button aria-label="Play/Pause"><span class="fas fa-pause"></span></button>
+                        <button aria-label="Next Slide"><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full">
+        <div class="flex flex-col w-full justify-center items-center w-1/2 py-20">
+            <div>
+                <h2 class="text-4xl font-bold p-5">WELCOME TO GALLENA.</h2>
+            </div>
+            <div class="w-1/2 text-lg text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <div class="p-10">
+                <button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-col">
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-end order-1 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-right">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-2"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-start order-2 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-left">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-1"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-end order-1 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-right">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-2"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+    </div>
+
+    <div class="w-full">
+       <div class="bg-cover bg-center" style="background-image:url('/img/slider-image-4.png');">
+            <div class="flex flex-col items-center justify-center py-40 text-white">
+                <div class="text-4xl mb-20 p-10 bg-black bg-opacity-60 rounded">Lorem ipsum dolor sit amet, consectetur elit</div>
+                <div class="flex space-x-12 text-black">
+                    <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                        <div class="relative -top-10">
+                            <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                <span class="fas fa-thumbs-up"></span>
+                            </div>
+                        </div>
+                        <div class="text-primary text-6xl font-bold pb-5">
+                            150 Years
+                        </div>
+                        <div class="text-black text-lg">
+                            of Academic Excellence
+                        </div>
+                    </div>
+                    <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                        <div class="relative -top-10">
+                            <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                <span class="fas fa-hand-holding-heart"></span>
+                            </div>
+                        </div>
+                        <div class="text-primary text-6xl font-bold pb-5">
+                            18.8
+                        </div>
+                        <div class="text-black text-lg">
+                            Average On-Campus Class Size
+                        </div>                        
+                    </div>
+                    <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                        <div class="relative -top-10">
+                            <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                <span class="fas fa-chalkboard-teacher"></span>
+                            </div>
+                        </div>
+                        <div class="text-primary text-6xl font-bold pb-5">
+                            96%
+                        </div>
+                        <div class="text-black text-lg">
+                            Freshmen awareded
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="w-full bg-primary p-32">
+        <div class="flex items-center justify-center">
+            <div class="w-3/5 text-white text-4xl text-center">
+                <p>Applying online to Gallena is easy!</p>
+            </div>
+            <div class="flex w-2/5">
+                <button class="rounded-full font-bold p-5 min-w-0 border-2 border-white text-white text-lg">CALL TO ACTION</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-gray-200 p-28 flex flex-col items-center justify-center">
+        <div class="text-5xl">College News</div>
+        <div class="flex flex-row space-x-12 m-10">
+            <div class="w-96 bg-white rounded shadow">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/news-placeholder-4.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-10">
+                    <div class="pb-5 text-xl font-bold">
+                        <p><a class="text-black underline hover:text-secondary" href="#">New Article 5</a></p>
+                    </div>
+                    <div class="h-full overflow-ellipsis overflow-clip overflow-hidden">
+                        <p class="font-light leading-loose text-lg">Summary Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore dunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet dolore this is a cat this is here an that is why there is that thing there wow so much wow if wow then wowwow this part should not be seen beccause it is toooooo long. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-96 bg-white rounded shadow">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/news-placeholder-4.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-10">
+                    <div class="pb-5 text-xl font-bold">
+                        <p><a class="text-black underline hover:text-secondary" href="#">New Article 5</a></p>
+                    </div>
+                    <div class="h-full overflow-ellipsis overflow-clip overflow-hidden">
+                        <p class="font-light leading-loose text-lg">Summary Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore dunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet dolore this is a cat this is here an that is why there is that thing there wow so much wow if wow then wowwow this part should not be seen beccause it is toooooo long. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-96 bg-white rounded shadow">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/news-placeholder-4.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-10">
+                    <div class="pb-5 text-xl font-bold">
+                        <p><a class="text-black underline hover:text-secondary" href="#">New Article 5</a></p>
+                    </div>
+                    <div class="h-full overflow-ellipsis overflow-clip overflow-hidden">
+                        <p class="font-light leading-loose text-lg">Summary Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore dunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet doloredunt ut laoreet dolore this is a cat this is here an that is why there is that thing there wow so much wow if wow then wowwow this part should not be seen beccause it is toooooo long. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <button class="rounded-full font-bold p-2 min-w-0 border-2 border-black text-black text-md">VIEW MORE NEWS</button>
+        </div>
+    </div>
+    <div class="w-full flex flex-row h-96 justify-center items-center my-20">
+        <div class="w-1/4 h-full flex flex-col justify-center items-start">
+            <div class="text-3xl text-primary font-bold py-2">Lorem ipsum dolor sit amet</div>
+            <div class="py-3">Duis aute irure dolor in reprehenderit in voluptatevvvv.</div>
+            <div class="w-full py-3">
+                <button class="rounded-full font-bold px-4 py-3 min-w-0 border-2 border-primary text-black text-md">CALL TO ACTION</button>
+            </div>
+        </div>
+        <div class="w-1/3 flex justify-start items-start">
+            <img class="object-cover h-96" src="/img/5df34587-d57e-481a-8b88-0e83ecde5435.jpg" alt="something" />
+        </div>
+    </div>
+    <div class="w-full">
+        <div class="h-64 bg-center flex justify-center items-center" style="background-image:url('/img/slider-image-4.png')">
+            <div class="bg-black text-white text-5xl bg-opacity-60 p-5 rounded">
+                Duis aute irure dolor in reprehenderit.
+            </div>
+        </div>
+    </div>
+    <footer class="w-full flex justify-center bg-primary text-white">
+        <div class="flex w-3/5 justify-center mt-12">
+            <div class="w-4/12 flex px-2 flex-col space-y-10">
+                <div>
+                    <div class="text-xl font-bold py-2">ABOUT GALLENA</div>
+                    <div><p class="font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <div>
+                    <div class="font-bold text-lg">FIND US ONLINE</div>
+                    <ul class="flex">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Insta</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="text-md py-10">©2021 Gallena University</div>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12 px-2">
+                <div class="text-xl font-bold py-2">RESOURCES</div>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Virtual Tour</li>
+                    <li>Library</li>
+                    <li>Book Store Kiosk</li>
+                    <li>Webmail</li>
+                    <li>Department of Public Safety</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12">
+                <div class="text-xl font-bold py-2">LATEST POSTS</div>
+                <ul class="flex flex-col justify-end" >
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text text-lg">
+                            News Article 5
+                        </div>
+                    </li>
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text-lg">
+                            News Article 6
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+	
+</html>

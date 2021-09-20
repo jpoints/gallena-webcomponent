@@ -15,21 +15,20 @@
     "rollup-plugin-livereload": "*",
     "rollup-plugin-svelte": "*",
     "rollup-plugin-terser": "*",
-    "svelte": "^3.42.4"
+    "svelte": "^3.42.6"
   },
   "dependencies": {
     "@types/x2js": "^3.1.0",
     "@types/xml2js": "^0.4.9",
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "axe-core": "^4.3.3",
     "cssnano": "^4.1.11",
     "postcss": "^8.3.6",
     "precss": "^4.0.0",
     "rollup-plugin-execute": "^1.1.1",
     "rollup-plugin-node-polyfills": "^0.2.1",
-    "rollup-plugin-uglify": "^6.0.4",
     "sirv-cli": "^1.0.14",
-    "tailwindcss": "^2.2.9",
+    "tailwindcss": "^2.2.14",
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23"
   }

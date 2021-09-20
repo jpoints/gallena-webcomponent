@@ -5,7 +5,7 @@
     export let description;
 </script>
 
-<link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="w-full flex flex-col justify-end items-start">
     <div class="w-auto mb-2">

@@ -10,13 +10,19 @@
     let timer = setTimer();
 
     onMount(async () => {
-        console.log("ergerg",path)
         if(path){
             let response = await fetch(path);
             data = await response.json();
         }
         else{
-            data = JSON.parse(data);
+            data = data.replace(/\}\,\]$/,"}]");
+            try{
+                data = JSON.parse(data);
+            }
+            catch(error){
+                data= [];
+                throw error;
+            }
         }
         let current = data[0]
     })
@@ -40,23 +46,23 @@
     }
 
     function setItem(current){
-        console.log("test", current);
         location = current;
         clearInterval(timer)
         timer = setTimer()
     }
 </script>
 
-<link rel="stylesheet" href="app.css" />
-<link rel="stylesheet" href="fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/omni-cms/app.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
    
     <div class="parent h-48 md:h-96 bg-black">
         {#each data as item,index}
         <div class="child {location === index ? 'fadeIn' : 'fadeOut'}" style='background-image: url({item.url});background-size: cover'>
                 <div class="flex justify-center h-full w-full">
                     <div class="flex justify-center items-center w-13">
-                        <button class="rounded-full bg-white w-12 h-12 border-black border-2" on:click={prevItem}>
-                                <span class="fas fa-angle-left"></span>
+                        <button class="rounded-full bg-white w-12 h-12 border-black border-2 flex justify-center items-center" on:click={nextItem}>
+                               <span class="material-icons">navigate_before</span>
                         </button>
                     </div>
                     <div class="w-full flex flex-col justify-end items-start">
@@ -73,8 +79,8 @@
                         </div>
                     </div>
                     <div class="flex justify-center items-center w-13">
-                        <button class="rounded-full bg-white w-12 h-12 border-black border-2" on:click={nextItem}>
-                                <span class="fas fa-angle-right"></span>
+                        <button class="rounded-full bg-white w-12 h-12 border-black border-2 flex justify-center items-center" on:click={nextItem}>
+                               <span class="material-icons">navigate_next</span>
                         </button>
                     </div>
                 </div>
