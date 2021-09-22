@@ -53,7 +53,7 @@
 </script>
 
 <link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
 
    
     <div class="parent h-48 md:h-96 bg-black">
@@ -62,7 +62,7 @@
                 <div class="flex justify-center h-full w-full">
                     <div class="flex justify-center items-center w-13">
                         <button class="rounded-full bg-white w-12 h-12 border-black border-2 flex justify-center items-center" on:click={nextItem}>
-                               <span class="material-icons">navigate_before</span>
+                               <i class="fas fa-chevron-left"></i>
                         </button>
                     </div>
                     <div class="w-full flex flex-col justify-end items-start">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="flex justify-center items-center w-13">
                         <button class="rounded-full bg-white w-12 h-12 border-black border-2 flex justify-center items-center" on:click={nextItem}>
-                               <span class="material-icons">navigate_next</span>
+                               <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>

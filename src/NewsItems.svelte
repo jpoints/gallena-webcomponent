@@ -69,14 +69,14 @@
         <ul>
             {#each feed as item}
                 <li>
-                    <div class="flex flex-row m-2 shadow bg-white p-2">
-						<div class="w-2/5 p-2">
-							<img alt="{item.media[0].title}" src="{item.media[0].content}" />
+                    <div class="flex flex-row justify-center items-center m-2 shadow bg-white p-2">
+						<div class="w-2/5 bg-blue-200">
+							<img class="" alt="{item.media[0].title}" src="{item.media[0].content}" />
 						</div>
-						<div class="flex flex-col justify-center w-3/5">
-							<div class="text-lg"><a href="{item.link}">{item.title}</a></div>
-							<div>{new Date(Date.parse(item.pubDate)).toLocaleDateString()}</div>
-							<div class="self-end"><a href="{item.link}">Read article</a></div>
+						<div class="flex flex-col justify-center justify-end w-3/5 px-5 h-full text-lg">
+							<div class="whitespace-nowrap overflow-hidden"><a href="{item.link}" title="{item.title}">{item.title}</a></div>
+							<div class="text-sm">{new Date(Date.parse(item.pubDate)).toLocaleDateString()}</div>
+							<div class="text-sm self-end"><a href="{item.link}">Read article</a></div>
 						</div>
 					</div>
                 </li>

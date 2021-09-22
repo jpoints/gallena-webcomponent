@@ -42,7 +42,7 @@
                 <a href="/components/tabs.html" class="text-white">Tabs</a>
             </mc-navlink>
             <mc-navlink>
-                <a href="/components/tabs.html" class="text-white">Sidenav</a>
+                <a href="/components/sidenav.html" class="text-white">Sidenav</a>
             </mc-navlink>
         </ul>
 </aside>

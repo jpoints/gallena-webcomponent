@@ -30,7 +30,7 @@
 	<div class="h-full block" on:click={setActive}>
         <button bind:this={button} class="flex justify-center border-solid border-b-2 border-transparent text-white w-36 w-full text-center">  
             {title}
-            <span class="material-icons text-sm text-white">{active ? 'expand_more' : 'expand_less'}</span>
+            <i class="fas {active ? 'fa-chevron-down' : 'fa-chevron-up'} px-2 pt-1 text-sm"></i>
         </button>
     </div>
     <div class="absolute top-14 -left-2 bg-white text-primary z-30 p-5 border-secondary border-4 {active ? null : 'hidden'}" use:clickOutside on:click_outside={handleClickOutside} on:press_escape={handleEscape} >
@@ -39,4 +39,5 @@
 </li>
 
 <link rel="stylesheet" href="{css}" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
+

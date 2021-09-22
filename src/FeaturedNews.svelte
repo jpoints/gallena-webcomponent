@@ -18,7 +18,8 @@
 </script>
 
 <link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
+
 
 <div class="bg-gray-100 p-5 h-96 w-full shadow-lg">
     <div class="flex">
@@ -27,10 +28,10 @@
         </div>
         <div class="py-5 w-1/5 text-3xl text-primary flex justify-end items-right">
             <button class="hover:text-secondary p-2" on:click={prevItem}>
-                <span class="material-icons">arrow_back</span>
+                <i class="fas fa-arrow-left text-lg"></i>
             </button>
             <button class="hover:text-secondary p-2" on:click={nextItem}>
-                <span class="material-icons">arrow_forward</span>
+                <i class="fas fa-arrow-right text-lg"></i>
             </button>
         </div>
     </div>

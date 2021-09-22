@@ -60,14 +60,13 @@
 </script>
 
 <link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
    
-
     <div class="h-48 w-full md:w-full md:h-96 bg-black">
                 <div class="flex justify-center h-full w-full">
                     <div class="flex justify-center items-center w-13 bg-primary text-white">
                         <button class="rounded-full w-12 h-full flex justify-center items-center" on:click={prevItem}>
-                               <span class="material-icons">navigate_before</span>
+                               <i class="fas fa-chevron-left"></i>
                         </button>
                     </div>
                     <div class="w-full flex flex-col justify-end items-start transition-opacity {opacity}" style='background-image: url({current.url});background-size: cover;'>
@@ -80,7 +79,7 @@
                     </div>
                     <div class="flex justify-center items-center w-13 bg-primary text-white">
                         <button class="w-12 h-full flex justify-center items-center" on:click={nextItem}>
-                               <span class="material-icons">navigate_next</span>
+                               <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>
