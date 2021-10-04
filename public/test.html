@@ -12,113 +12,16 @@
 	<script defer src='/omni-cms/components.js'></script>
 </head>
 
-<body class="h-screen bg-white w-full flex flex-col items-center">
+<body class="h-screen bg-white text-black w-full flex flex-col items-center">
 
 <mc-design-sidepanel></mc-design-sidepanel>
-<p class="h-96">
-    test
-    <i class="fas fa-camera"></i>
-</p>
-<p>This is a gallery test 
-    <span class="material-icons">face</span>
-    <span class="material-icons-outlined">account_circle</span>
-    <span class="material-icons">account_circle</span>
-</p>
-    <div class="bg-blue-300 w-full h-96 flex" style="height:50rem">
-    
-        <mc-gallery-section class="flex w-full h-full">
-            <mc-slides class="flex flex-col w-full h-full">
-                        <mc-slide>
-                            <div class="w-full flex h-full">
-                                <div class="w-4/5 bg-cover bg-center" style="background-image:url('/img/slider-image-4.png')">
-                                </div>
-                                <div class="w-1/5 h-full bg-primary text-white flex flex-col justify-start px-5 py-10">
-                                    <div class="flex flew-row w-full h-1/6">
-                                        <mc-gallerytabs class="flex w-full justify-end space-x-5"></mc-gallerytabs>
-                                    </div>
-                                    <div class="h-3/6 flex items-end py-5 text-2xl text-bold">
-                                        <div>Lorem ipsum dolor sit amet, consectetuer elit!</div>
-                                    </div>
-                                    <div class="h-1/6">
-                                        <button class="rounded-full p-2 min-w-0 border-2 font-bold border-white">CALL TO ACTION</button>
-                                    </div>
-                                    <div class="h-1/6 flex justify-end items-end space-x-2">
-                                        <div class="flex space-x-4">
-                                            <mc-prevslide>
-                                                <span class="fas fa-arrow-left"></span>
-                                            </mc-prevslide>
-                                            <mc-nextslide>
-                                                <span class="fas fa-arrow-right"></span>
-                                            </mc-nextslide>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </mc-slide>
-                        <mc-slide>
-                            <div class="w-full h-full flex">
-                                <div class="w-4/5 bg-cover bg-center" style="background-image:url('/img/wow.jpg')">
-                                </div>
-                                <div class="w-1/5 h-full bg-primary text-white flex flex-col justify-start px-5 py-10">
-                                    <div class="flex flew-row w-full h-1/6">
-                                        <mc-gallerytabs class="flex w-full justify-end space-x-5"></mc-gallerytabs>
-                                    </div>
-                                    <div class="h-3/6 flex items-end py-5 text-2xl text-bold">
-                                        <div>Lorem ipsum dolor sit amet, consectetuer elit!</div>
-                                    </div>
-                                    <div class="h-1/6">
-                                        <button class="rounded-full p-2 min-w-0 border-2 font-bold border-white">CALL TO ACTION</button>
-                                    </div>
-                                    <div class="h-1/6 flex justify-end items-end space-x-2">
-                                        <div class="flex space-x-4">
-                                            <mc-prevslide>
-                                                <span class="fas fa-arrow-left"></span>
-                                            </mc-prevslide>
-                                            <mc-nextslide>
-                                                <span class="fas fa-arrow-right"></span>
-                                            </mc-nextslide>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </mc-slide>
-                    </mc-slides>
-        </mc-gallery-section>
-        </div>
+<mc-card class="w-96">
+    <mc-sidenav-json path="_sidenav.json"></mc-sidenav-json>
+</mc-card>
+ 
 
-        <div class="bg-blue-300 w-full h-96 flex" style="height:50rem">
-            <div class="flex w-full">
-                <div class="w-4/5 bg-cover bg-center" style="background-image:url('/img/slider-image-4.png')"></div>
-                <div class="w-1/5 h-full bg-primary text-white flex flex-col justify-start px-5 py-10">
-                    <div class="flex flew-row w-full h-1/6">
-                        <ul class="flex w-full justify-end space-x-5">
-                            <li>
-                                <button class="w-3 h-3 border-white border-2 rounded-full"></button>
-                            </li>
-                            <li>
-                                <button class="w-3 h-3 border-white border-2 rounded-full"></button>
-                            </li>
-                            <li>
-                                <button class="w-3 h-3 border-white border-2 rounded-full"></button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="h-3/6 flex items-end py-5 text-2xl text-bold">
-                        <div>Lorem ipsum dolor sit amet, consectetuer elit!</div>
-                    </div>
-                    <div class="h-1/6">
-                        <button class="rounded-full p-2 min-w-0 border-2 font-bold border-white">CALL TO ACTION</button>
-                    </div>
-                    <div class="h-1/6 flex justify-end items-end space-x-2">
-                        <div class="flex space-x-4">
-                            <button aria-label="Previous Slide"><span class="fas fa-arrow-left"></span></button>
-                            <button aria-label="Play/Pause"><span class="fas fa-pause"></span></button>
-                            <button aria-label="Next Slide"><span class="fas fa-arrow-right"></span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
 </body>
 	
 </html>

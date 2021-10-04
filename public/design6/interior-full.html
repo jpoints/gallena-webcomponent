@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
+
+	<script defer src='/omni-cms/components.js'></script>
+    <script>
+        var csspath = "/app5.css"
+    </script>
+</head>
+
+<body class="h-full bg-white w-full flex flex-col">
+
+    <mc-design-sidepanel></mc-design-sidepanel>
+    <mc-scrolltop></mc-scrolltop>
+    
+    <div class="bg-primary w-full h-12 px-10 flex px-20">
+        <div>
+            <ul class="flex h-full items-center bars">
+                <li><a class="text-white px-3 py-1 my-3 border-r" href="tel:12675026000">000-000-0000</a></li>
+                <li><a class="text-white px-3 py-1 my-3" href="mailto:admissions@gallena.edu">admissions@gallena.edu</a></li>
+             </ul>            
+        </div>
+        <div class="justify-self-end flex-grow h-full flex items-center">
+            <form class="flex justify-end w-full m-2" role='search'>
+				<input class="w-64 p-2 rounded-full h-6" type='search' aria-label="Search..." placeholder="Search..." id='header-search'/>
+			</form>
+        </div>
+    </div>
+
+    <div class="bg-primary text-white w-full px-10 flex px-20 h-24">
+                <div class="w-1/4">
+                    <img class="m-4 md:h-12 lg:h-16" src="/img/gu-logo.png" />
+                </div>
+                <nav class="flex flex-row w-full justify-end items-center">
+                    <ul class="flex spac-x-10 lg:space-x-20 text-sm xl:text-xl">
+                        <li>Home Page</li>
+                        <li>Interior Pages</li>
+                        <li>Faculty Pages</li>
+                        <li>News Pages</li>
+                        <li>Events Pages</li>
+                    </ul>
+                </nav>
+    </div>
+
+    <div class="w-full">
+        <div class="bg-cover bg-center" style="background-image:url('/img/slider-image-4.png');">
+             <div class="flex flex-col items-start justify-center mx-10 py-24 text-white">
+                 <h1 class="text-5xl mb-20 p-10 bg-black bg-opacity-60 rounded">Interior Full-Width</h1>
+             </div>
+        </div>
+     </div>
+  
+    <div class="w-full">
+        <div class="flex flex-col w-full justify-center items-center w-1/2 py-16">
+            <div>
+                <p class="text-xl italic font-sans p-5">DECORATIVE TEXT</p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-sans p-5">Introductory Text</h2>
+            </div>
+            <div class="w-1/3 text-lg text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam magna, interdum molestie vehicula non, sodales ac libero. Nunc et pharetra ipsum. Etiam commodo massa at felis pulvinar scelerisque a eget magna. Etiam nec sagittis nibh.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-gray-200 px-28 py-12 flex flex-col items-center justify-center">
+        <div class="text-4xl">Image Cards</div>
+        <div class="flex flex-row space-x-12 m-10">
+            <div class="w-96 bg-white rounded shadow-xl">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/student.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-8">
+                    <div class="pb-5 text-3xl">
+                        First-time Freshmen
+                    </div>
+                    <div class="h-full px-12">
+                        <ul class="list-disc text-lg">
+                            <li>Admission Requirements</li>
+                            <li>Deadlines for Admission</li>
+                            <li>New Student Orientation</li>
+                            <li>Request Information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-96 bg-white rounded shadow-xl">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/students.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-8">
+                    <div class="pb-5 text-3xl">
+                       Graduate
+                    </div>
+                    <div class="h-full px-12">
+                        <ul class="list-disc text-lg">
+                            <li>Admission Requirements</li>
+                            <li>Deadlines for Admission</li>
+                            <li>New Student Orientation</li>
+                            <li>Request Information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-96 bg-white rounded shadow-xl">
+                <div class="h-52 bg-blue-200 overflow-hidden">
+                    <img class="object-cover transition-all transform delay-200 ease-in-out hover:scale-150" alt="news title" src="/img/grid-image-4.jpg" />
+                </div>
+                <div class="h-48 flex flex-col mx-5 my-8">
+                    <div class="pb-5 text-3xl">
+                       International
+                    </div>
+                    <div class="h-full px-12">
+                        <ul class="list-disc text-lg">
+                            <li>Admission Requirements</li>
+                            <li>Deadlines for Admission</li>
+                            <li>New Student Orientation</li>
+                            <li>Request Information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-full bg-secondary">
+        <div class="bg-cover bg-center">
+             <div class="flex flex-col items-center justify-center py-12 text-black">
+                 <div class="text-4xl mb-20 p-5">Icon Cards</div>
+                 <div class="flex space-x-12 text-black">
+                     <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                         <div class="relative -top-10">
+                             <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                 <span class="fas fa-thumbs-up"></span>
+                             </div>
+                         </div>
+                         <div class="text-primary text-6xl font-bold pb-5">
+                             150 Years
+                         </div>
+                         <div class="text-black text-lg">
+                             of Academic Excellence
+                         </div>
+                     </div>
+                     <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                         <div class="relative -top-10">
+                             <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                 <span class="fas fa-hand-holding-heart"></span>
+                             </div>
+                         </div>
+                         <div class="text-primary text-6xl font-bold pb-5">
+                             18.8
+                         </div>
+                         <div class="text-black text-lg">
+                             Average On-Campus Class Size
+                         </div>                        
+                     </div>
+                     <div class="bg-white w-80 h-60 rounded shadow border-white flex flex-col items-center">
+                         <div class="relative -top-10">
+                             <div class="bg-primary text-white w-20 h-20 text-4xl rounded-full flex items-center justify-center">
+                                 <span class="fas fa-chalkboard-teacher"></span>
+                             </div>
+                         </div>
+                         <div class="text-primary text-6xl font-bold pb-5">
+                             96%
+                         </div>
+                         <div class="text-black text-lg">
+                             Freshmen awareded
+                         </div>                        
+                     </div>
+                 </div>
+             </div>
+        </div>
+     </div>
+
+    <div class="w-full">
+        <div class="bg-cover bg-center flex flex-col justify-center items-center" style="background-image:url('/img/slider-image-4.png');">
+             <div class="flex flex-col items-center justify-center mx-10 pt-24 pb-10 text-white">
+                <p class="bg-black bg-opacity-60 text-3xl p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+             </div>
+             <div class="flex flex-row justify-center items-center w-2/3 space-x-20 m-10">
+                 <div class="rounded bg-white test-primary w-1/2 p-8 shadow-xl">
+                    <div class="text-3xl font-bold py-2">Plain White Card</div>
+                    <div class="py-2 test-lg">Cras tincidunt lectus ac quam ultrices posuere. Duis pretium commodo risus vel posuere. Sed elit dolor, dapibus vel sapien vel, rutrum malesuada diam.</div>
+                    <div class="py-4">
+                        <button class="rounded-full px-12 border-2 border-primary py-2">BUTTON</button>
+                    </div>
+                </div>
+                <div class="rounded bg-primary text-white w-1/2 p-8 shadow-xl">
+                    <div class="text-3xl font-bold py-2">Plain White Card</div>
+                    <div class="py-2 test-lg">Cras tincidunt lectus ac quam ultrices posuere. Duis pretium commodo risus vel posuere. Sed elit dolor, dapibus vel sapien vel, rutrum malesuada diam.</div>
+                    <div class="py-4">
+                        <button class="rounded-full px-12 border-2 border-white py-2">BUTTON</button>
+                    </div>    
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-col">
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-end order-1 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-right">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-2"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-start order-2 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-left">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-1"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+        <div class="flex flex-row w-full" style="height:30rem">
+            <div class="w-1/2 bg-gray-100 flex flex-col justify-center items-end order-1 space-y-5 p-10">
+                <div class="text-4xl font-bold">Heading</div>
+                <div class="text-3xl font-bold">subheading</div>
+                <div class="text-lg text-right">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venen</p>
+                </div>
+                <div><button class="rounded-full font-bold p-2 min-w-0 border-2 border-black">CALL TO ACTION</button></div>
+            </div>
+            <div class="w-1/2 relative order-2"><img class="absolute object-cover w-full h-full" src="/img/grid-image-1.jpg" /></div>
+        </div>
+
+    </div>
+
+    <div class="w-full flex flex-col bg-gray-200 py-12">
+        <div class="flex flex-row justify-center items-center">
+            <div class="w-1/6 text-center h-full">
+                <button class="w-full py-12">
+                    <i class="fas fa-arrow-left text-2xl"></i>
+                </button>
+            </div>
+            <div class="w-4/6 flex flex-col justify-center items-center">
+                <div>
+                    <div class="flex justify-center items-center"><img class="rounded-full h-24 w-24" src="/img/testimonials.png" /></div>
+                    <div><p class="p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac auctor eros, id gravida
+                        libero. Proin elit tellus, sollicitudin et ultrices a, hendrerit efficitur enim. Etiam
+                        pulvinar et risus nec pulvinar. Morbi eget enim scelerisque, imperdiet ligula sit
+                        amet, porta enim. Ut eros quam, venenatis at placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac auctor eros, id gravida
+                        libero. Proin elit tellus, sollicitudin et ultrices a, hendrerit efficitur enim. Etiam
+                        pulvinar et risus nec pulvinar. Morbi eget enim scelerisque, imperdiet ligula sit
+                        amet, porta enim. Ut eros quam, venenatis at placerat.</p></div>
+                    <div class="w-full flex justify-end items-end">
+                        <cite>John Doe</cite>
+                    </div> 
+                </div>
+            </div>
+            <div class="w-1/6 text-center">
+                <button class="w-full py-12">  
+                    <i class="fas fa-arrow-right text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-secondary p-20">
+        <div class="flex items-center justify-center">
+            <div class="w-3/5 text-white text-4xl text-center">
+                <p>Applying online to Gallena is easy!</p>
+            </div>
+            <div class="flex w-2/5">
+                <button class="rounded-full bg-primary font-bold p-3 min-w-0 border-2 border-white text-white text-lg">CALL TO ACTION</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full flex justify-center bg-primary text-white">
+        <div class="flex w-3/5 justify-center mt-12">
+            <div class="w-4/12 flex px-2 flex-col space-y-10">
+                <div>
+                    <div class="text-xl font-bold py-2">ABOUT GALLENA</div>
+                    <div><p class="font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <div>
+                    <div class="font-bold text-lg">FIND US ONLINE</div>
+                    <ul class="flex">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Insta</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="text-md py-10">©2021 Gallena University</div>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12 px-2">
+                <div class="text-xl font-bold py-2">RESOURCES</div>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Virtual Tour</li>
+                    <li>Library</li>
+                    <li>Book Store Kiosk</li>
+                    <li>Webmail</li>
+                    <li>Department of Public Safety</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12">
+                <div class="text-xl font-bold py-2">LATEST POSTS</div>
+                <ul class="flex flex-col justify-end" >
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text text-lg">
+                            News Article 5
+                        </div>
+                    </li>
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text-lg">
+                            News Article 6
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+	
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
+
+	<script defer src='/omni-cms/components.js'></script>
+    <script>
+        var csspath = "/app5.css"
+    </script>
+</head>
+
+<body class="h-screen bg-white w-full flex flex-col">
+
+    <mc-design-sidepanel></mc-design-sidepanel>
+    <mc-scrolltop></mc-scrolltop>
+    
+    <div class="bg-primary w-full h-12 px-10 flex px-20">
+        <div>
+            <ul class="flex h-full items-center bars">
+                <li><a class="text-white px-3 py-1 my-3 border-r" href="tel:12675026000">000-000-0000</a></li>
+                <li><a class="text-white px-3 py-1 my-3" href="mailto:admissions@gallena.edu">admissions@gallena.edu</a></li>
+             </ul>            
+        </div>
+
+        <div class="justify-self-end flex-grow h-full flex items-center">
+            <form class="flex justify-end w-full m-2" role='search'>
+				<input class="w-64 p-2 rounded-full h-6" type='search' aria-label="Search..." placeholder="Search..." id='header-search'/>
+			</form>
+        </div>
+    </div>
+    <div class="bg-primary text-white w-full px-10 flex px-20 h-24">
+        <div class="w-1/4">
+            <img class="m-4 md:h-12 lg:h-16" src="/img/gu-logo.png" />
+        </div>
+        <nav class="flex flex-row w-full justify-end items-center">
+            <ul class="flex spac-x-10 lg:space-x-20 text-sm xl:text-xl">
+                <li>Home Page</li>
+                <li>Interior Pages</li>
+                <li>Faculty Pages</li>
+                <li>News Pages</li>
+                <li>Events Pages</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="my-5 py-4 max-w-7xl w-full m-auto border-b border-primary">
+        <div class="flex flex-row w-full">
+                <h1 class="w-full">
+                    <span class="text-2xl italic">UPG 222</span><br/>
+                    <span class="text-4xl font-bold text-secondary">English 2</span><br/>
+                    <span class="italic my-2">Delivery Options: Class and Online</span><br/>
+                    <span class="italic">UCalgary Continuing Education</span><br/>
+                </h1>
+                <div class="">buttons</div>
+        </div>
+    </div>
+
+    <div class="flex flex-row max-w-7xl w-full m-auto pb-12">
+        <div class="w-1/2">
+            <div class="my-5">
+                <p>This course is designed to prepare students for university entrance. The course focuses on the study of literature and non-print media with the writing of longer essays. Students will learn research and documentation methods needed for academic essays.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold py-2">Course Details</h2>
+                <div>
+                    <h3 class="text-xl font-bold py-2">Course Learning Outcomes</h3>
+                    <p class="pb-5">By completion of this course, successful students will be able to:</p>
+                    <ul class="list-disc pl-12">
+                        <li>Express yourself in a clear, grammatically correct, persuasive and audience-appropriate manner</li>
+                        <li>Review and master elements of grammar, punctuation and sentence structure</li>
+                        <li>Develop strategies for reading difficult material</li>
+                        <li>Practice critical thinking skills through questioning (in class activities, discussions, presentations and compositions)</li>
+                        <li>Explore thoughts, ideas, feelings, and experiences</li>
+                        <li>Comprehend literature and other texts in oral, print, visual, and multimedia forms, and respond personally, critically, and creatively</li>
+                        <li>Manage ideas and information</li>
+                        <li>Create a variety of texts to enhance the clarity and artistry of communication</li>
+                        <li>Respect, support, and collaborate with others</li>
+                        <li>Summarize the main ideas of passages to be incorporated into research essays (summarize, paraphrase, and quote from selected sources)</li>
+                        <li>Use MLA documentation for citation and preparation of references in research papers</li>
+                        <li>Plan original essays; prepare the topic, thesis, and supporting content</li>
+                        <li>Prepare an outline of a proposed essay</li>
+                        <li>Plan and gather resources to research a specified topic</li>
+                        <li>Identify and utilize writing techniques relating to introductions, transitions, organizational patterns, (exposition, comparison, contrast), and conclusions</li>
+                        <li>Non-print media and critical reflection</li>
+                        <li>Summarize the plot of a novel</li>
+                        <li>Identify aspects of setting, plot, characterization, theme</li>
+                        <li>Identify the writer’s point of view and show how it affects the story</li>
+                        <li>Analyze how setting, plot, mood and climate influence the development of the plot</li>
+                        <li>Select details in order to make references</li>
+                        <li>Develop the theme(s) of a selection</li>
+                        <li>Read, write about, discuss, and critique a novel</li>
+                        <li>Identify musical elements in poetry such as rhyme, rhythm and alliteration</li>
+                        <li>Read poetry that makes social commentary</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold py-2">Prerequites</h3>
+                <div>
+                    <p>Successful completion of English 20-1 or equivalent course. Questions about placement?</p>
+                    <p>Call: 403.220.2866 or E-mail: <a title="Email about this Program" href="conted@ucalgary.ca">conted@ucalgary.ca</a></p>  
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 px-10">
+            <h2 class="text-2xl font-bold pb-5">Choose a Section...</h2>
+            <div class="flex flex-col space-y-5">
+                <accordion-row>
+                    <div slot="row" class="flex flex-row justify-center items-center">
+                        <div class="w-64">
+                            <div>UPG 222 - 023</div>
+                            <div class="text-green-500 text-base font-bold">Available</div>
+                        </div>
+                        <div class="">
+                            Jan 11, 2022 (Online)
+                        </div>
+                    </div>
+                    <div slot="content" class="bg-white p-3 shadow border-solid border border-secondary">
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                    </div>
+                </accordion-row>
+                <accordion-row>
+                    <div slot="row" class="flex flex-row justify-center items-center">
+                        <div class="w-64">
+                            <div>UPG 222 - 023</div>
+                            <div class="text-green-500 text-base font-bold">Available</div>
+                        </div>
+                        <div class="">
+                            Jan 11, 2022 (Online)
+                        </div>
+                    </div>
+                    <div slot="content" class="bg-white p-3 shadow border-solid border border-secondary">
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                    </div>
+                </accordion-row>
+                <accordion-row>
+                    <div slot="row" class="flex flex-row justify-center items-center">
+                        <div class="w-64">
+                            <div>UPG 222 - 023</div>
+                            <div class="text-green-500 text-base font-bold">Available</div>
+                        </div>
+                        <div class="">
+                            Jan 11, 2022 (Online)
+                        </div>
+                    </div>
+                    <div slot="content" class="bg-white p-3 shadow border-solid border border-secondary">
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                    </div>
+                </accordion-row>
+                <accordion-row>
+                    <div slot="row" class="flex flex-row justify-center items-center">
+                        <div class="w-64">
+                            <div>UPG 222 - 023</div>
+                            <div class="text-green-500 text-base font-bold">Available</div>
+                        </div>
+                        <div class="">
+                            Jan 11, 2022 (Online)
+                        </div>
+                    </div>
+                    <div slot="content" class="bg-white p-3 shadow border-solid border border-secondary flex flex-col w-full">
+                       <div class="w-full flex justify-center py-4 border-b border-secondary">
+                           <button class="bg-primary text-white rounded p-4"><a class="w-full text-white" href="https://moderncampus.com/products/destiny-one.html">Add to Cart</a></button>
+                       </div>
+                       <div class="flex flex-col w-full border-b border-secondary">
+                           <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Type:
+                                </div>
+                                <div>
+                                    Class
+                                </div>
+                           </div>
+                           <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Days:
+                                </div>
+                                <div>
+                                    M, Th
+                                </div>
+                            </div>
+                            <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Time:
+                                </div>
+                                <div>
+                                    5:00PM to 8:00PM
+                                </div>
+                            </div>
+                            <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Dates:
+                                </div>
+                                <div>
+                                    Jan 10, 2022 to Mar 21, 2022
+                                </div>
+                            </div>
+                       </div>
+                       <div class="flex flex-col w-full border-b border-secondary">
+                        <div class="flex flex-row w-full py-2">
+                             <div class="w-1/3">
+                                Schedule and Location:
+                             </div>
+                             <div>
+                                View Details
+                             </div>
+                        </div>
+                        <div class="flex flex-row w-full py-2">
+                             <div class="w-1/3">
+                                 Hours:
+                             </div>
+                             <div>
+                                 60.0
+                             </div>
+                         </div>
+                         <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Campus:
+                                </div>
+                                <div>
+                                    Main Campus
+                                </div>
+                            </div>
+                            <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Delivery Options:
+                                </div>
+                                <div>                                    
+                                    Class
+                                </div>
+                            </div>
+                            <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Course Fees:
+                                </div>
+                                <div>                                    
+                                    Flat Fee non-credit	$545.00	
+                                </div>
+                            </div>
+                            <div class="flex flex-row w-full py-2">
+                                <div class="w-1/3">
+                                    Instructor(s):
+                                </div>
+                                <div>                                    
+                                   Patricia Taylor, BEd, MEd	
+                                </div>
+                            </div>
+                        </div>
+                       
+                       <div class="py-4  border-b border-secondary">
+                           <div class="text-xl py-2">Reading List / Textbook</div>
+                           <ul class="flex flex-col space-y-5">
+                                <li>
+                                    <ul>
+                                        <li>Title: Indian Horse</li>
+                                        <li>Author: Richard Wagamese</li>
+                                        <li>Publisher: Douglas & McIntyre<li>
+                                        <li>Edition: Canadian First Edition <li>
+                                        <li>ISBN-10: 1553654021</li>
+                                        <li>ISBN-13: 978-1553654025</li>
+                                        <li><a href="https://www.amazon.com/Broadview-Introduction-Literature-Lisa-Chalykoff/dp/1554810787">Buy Now</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Title: The Broadview Pocket Guide to Writing</li>
+                                        <li>Author: Babington, Doug; LePan, Don; Okun, Maureen; Ruddock, Nora</li>
+                                        <li>Publisher: Broadview Press</li>
+                                        <li>Edition: Revised Canadian Fourth Edition</li>
+                                        <li>ISBN-10: 1553654021</li>
+                                        <li>ISBN: 978-1554813360 / 1554813360</li>
+                                        <li><a href="https://www.amazon.com/Broadview-Introduction-Literature-Lisa-Chalykoff/dp/1554810787">Buy Now</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Title: The Broadview Introduction to Literature</li>
+                                        <li>Editor: Chalykoff, Lisa; Gordon, Neta; Lumsden, Paul   </li>
+                                        <li>Publisher: Broadview Press</li>
+                                        <li>Edition: Concise Edition</li>
+                                        <li>ISBN-10: 1553654021</li>
+                                        <li>ISBN: 978-1554812554 / 1554812550</li>
+                                        <li><a href="https://www.amazon.com/Broadview-Introduction-Literature-Lisa-Chalykoff/dp/1554810787">Buy Now</a></li>
+                                    </ul>
+                                </li>
+                           </ul>
+                       </div>
+                       <div class="border-b border-secondary py-2">
+                           <div class="text-lg py-4">Section Notes:</div>
+                           <div class="flex flex-col space-y-5">
+                                <div>
+                                    <p><span class="font-bold">Prerequisite</span>: English 20-1 or an equivalent course. Questions? Call: 403.220.2866 or e-mail conted@ucalgary.ca</p>
+                                </div>
+                                <div>
+                                    <p>Delivery format may change in response to COVID-19. Students will be informed of any changes.</p>
+                                </div>
+                                <div>
+                                        <p>This course uses Desire2Learn (D2L), an online learning management system. The instructor will post your course outline and other materials in D2L. For more information about D2L, please visit our Online Learning Resources.</p>
+                                </div>
+                                <div>
+                                        <p>Unless otherwise stated, notice of withdrawal or transfer from a course must be received at least seven calendar days prior to the start date of the course.</p>
+                                </div>
+                            </div>
+                       </div>
+                       <div></div>
+                    </div>
+                </accordion-row>
+            </div>
+        </div>
+    </div>
+
+    
+
+   
+    <footer class="w-full flex justify-center bg-primary text-white">
+        <div class="flex w-3/5 justify-center mt-12">
+            <div class="w-4/12 flex px-2 flex-col space-y-10">
+                <div>
+                    <div class="text-xl font-bold py-2">ABOUT GALLENA</div>
+                    <div><p class="font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <div>
+                    <div class="font-bold text-lg">FIND US ONLINE</div>
+                    <ul class="flex">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Insta</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="text-md py-10">©2021 Gallena University</div>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12 px-2">
+                <div class="text-xl font-bold py-2">RESOURCES</div>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Virtual Tour</li>
+                    <li>Library</li>
+                    <li>Book Store Kiosk</li>
+                    <li>Webmail</li>
+                    <li>Department of Public Safety</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="w-3/12">
+                <div class="text-xl font-bold py-2">LATEST POSTS</div>
+                <ul class="flex flex-col justify-end" >
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text text-lg">
+                            News Article 5
+                        </div>
+                    </li>
+                    <li class="flex flex-row items-center">
+                        <div class="w-1/3 my-4 mr-2">
+                            <img src="/img/news-placeholder-4.jpg" alt="test">
+                        </div>
+                        <div class="w-2/3 text-lg">
+                            News Article 6
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+	
+</html>
