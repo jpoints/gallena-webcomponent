@@ -7,13 +7,10 @@
 	<title>Svelte app</title>
 
 	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="/omni-cms/main.css" rel="stylesheet">
 	<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
 
 	<script defer src='/omni-cms/components.js'></script>
-    <script>
-        var csspath = "/app5.css"
-    </script>
 </head>
 
 <body class="h-full bg-white w-full flex flex-col">
@@ -21,11 +18,11 @@
     <mc-design-sidepanel></mc-design-sidepanel>
     <mc-scrolltop></mc-scrolltop>
     
-    <div class="bg-primary w-full h-12 px-10 flex px-20">
+    <div class="bg-primary w-full h-12 flex px-20">
         <div>
-            <ul class="flex h-full items-center bars">
-                <li><a class="text-white px-3 py-1 my-3 border-r" href="tel:12675026000">000-000-0000</a></li>
-                <li><a class="text-white px-3 py-1 my-3" href="mailto:admissions@gallena.edu">admissions@gallena.edu</a></li>
+            <ul class="flex h-full list-none">
+                <li><a class="text-white px-3 border-r" href="tel:12675026000">123-123-1234</a></li>
+                <li><a class="text-white px-3 " href="mailto:admissions@gallena.edu">admissions@gallena.edu</a></li>
              </ul>            
         </div>
         <div class="justify-self-end flex-grow h-full flex items-center">
@@ -40,12 +37,12 @@
                     <img class="m-4 md:h-12 lg:h-16" src="/img/gu-logo.png" />
                 </div>
                 <nav class="flex flex-row w-full justify-end items-center">
-                    <ul class="flex spac-x-10 lg:space-x-20 text-sm xl:text-xl">
-                        <li>Home Page</li>
-                        <li>Interior Pages</li>
-                        <li>Faculty Pages</li>
-                        <li>News Pages</li>
-                        <li>Events Pages</li>
+                    <ul class="flex space-x-10 lg:space-x-20 md:text-lg lg:text-xl list-none">
+                        <li>Home</li>
+                        <li>Interior</li>
+                        <li>Faculty</li>
+                        <li>News</li>
+                        <li>Events</li>
                     </ul>
                 </nav>
     </div>
@@ -90,7 +87,7 @@
                 </div>
                 <div>
                     <div class="font-bold text-lg">FIND US ONLINE</div>
-                    <ul class="flex">
+                    <ul class="flex p-0 list-none space-x-2">
                         <li>Facebook</li>
                         <li>Twitter</li>
                         <li>Insta</li>
@@ -102,7 +99,7 @@
             <div class="w-1/12"></div>
             <div class="w-3/12 px-2">
                 <div class="text-xl font-bold py-2">RESOURCES</div>
-                <ul>
+                <ul class="list-none p-0">
                     <li>Contact Us</li>
                     <li>Privacy Policy</li>
                     <li>Virtual Tour</li>
@@ -116,7 +113,7 @@
             <div class="w-1/12"></div>
             <div class="w-3/12">
                 <div class="text-xl font-bold py-2">LATEST POSTS</div>
-                <ul class="flex flex-col justify-end" >
+                <ul class="flex flex-col justify-end list-none p-0" >
                     <li class="flex flex-row items-center">
                         <div class="w-1/3 my-4 mr-2">
                             <img src="/img/news-placeholder-4.jpg" alt="test">

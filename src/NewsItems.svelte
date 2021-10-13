@@ -3,6 +3,8 @@
 
 <script>
    import { onMount } from 'svelte';
+   import {useCSS} from './helper/styles.js';
+    useCSS();
    export let path;
    export let title;
    export let category = "";
@@ -66,7 +68,7 @@
 <div class="bg-gray-100 m-2 shadow-lg p-5">
     <div class="text-2xl m-2">{title}</div>
     {#if loaded}
-        <ul>
+        <ul class="list-none">
             {#each feed as item}
                 <li>
                     <div class="flex flex-row justify-center items-center m-2 shadow bg-white p-2">
@@ -86,8 +88,6 @@
         <p>Loading</p>
     {/if}
 </div>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <style>
 

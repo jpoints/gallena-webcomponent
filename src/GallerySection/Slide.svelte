@@ -4,6 +4,8 @@
 	import { get_current_component } from 'svelte/internal';
 	import { onMount, tick } from 'svelte';
     import { fade,fly } from 'svelte/transition';
+    import {useCSS} from '../helper/styles.js';
+	useCSS();
 	const component = get_current_component();
 
 
@@ -37,8 +39,6 @@
 	});
 	
 </script>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
 
     {#if active === "true"}
     <div class="w-full h-full" out:fade={{duration:800, y:300}} in:fade={{x:-140,duration:800}}>

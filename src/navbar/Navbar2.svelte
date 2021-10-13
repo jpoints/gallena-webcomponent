@@ -1,10 +1,9 @@
 <svelte:options tag="mc-navbar2" />
 
 <script>
+    import {useCSS} from '../helper/styles.js';
+	useCSS();
 </script>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
-
 
 <section class="bg-secondary text-white w-full">
 		<div class="flex flex-row items-center mx-auto">

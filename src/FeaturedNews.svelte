@@ -2,6 +2,9 @@
 
 
 <script>
+    import {useCSS,useIcons} from './helper/styles.js';
+    useCSS();
+    useIcons();
     let test = ["a","b","c"]
     let location = 0;
     let current = test[location]
@@ -16,10 +19,6 @@
         current = test[location]
     }
 </script>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
-
 
 <div class="bg-gray-100 p-5 h-96 w-full shadow-lg">
     <div class="flex">
@@ -36,19 +35,19 @@
         </div>
     </div>
     <div class="parent">
-        <div class="child bg-white {current === 'a' ? 'fadeIn' : 'fadeOut'}">
+        <div class="child bg-white p-2 {current === 'a' ? 'fadeIn' : 'fadeOut'}">
             <div class="text-xl">Study Abroad Information</div>
             <div>July 01, 2016</div>
             <div class="text-lg py-5">All Gallena friends and family are welcome to join us on campus for our annual semester abroad discussion. </div>
             <div class="text-lg"><a href="/test1.html">Read Article</a></div>
         </div>
-        <div class="child bg-white {current === 'b' ? 'fadeIn' : 'fadeOut'}">
+        <div class="child bg-white p-2 {current === 'b' ? 'fadeIn' : 'fadeOut'}">
             <div class="text-xl">Rabbit</div>
             <div>July 01, 2016</div>
             <div class="text-lg py-5">Jumps over the fence</div>
             <div class="text-lg"><a href="/test2.html">Read Article</a></div>
         </div>
-        <div class="child bg-white {current === 'c' ? 'fadeIn' : 'fadeOut'}">
+        <div class="child bg-white p-2 {current === 'c' ? 'fadeIn' : 'fadeOut'}">
             <div class="text-xl">Dog is here</div>
             <div>July 01, 2016</div>
             <div class="text-lg py-5">All Gallena friends and family are welcome to join us on campus for our annual semester abroad discussion. </div>

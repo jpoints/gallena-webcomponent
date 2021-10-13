@@ -3,7 +3,14 @@
 <script>
     import { get_current_component } from 'svelte/internal';
 	import { onMount} from 'svelte';
+    import {useCSS} from '../helper/styles.js';
+	useCSS();
+
 	const component = get_current_component();
+    let cssfile = "/omni-cms/app.css"
+    if (typeof mc_css !== 'undefined') {
+        cssfile = mc_css;
+    }
 
     var reg = {
         tab:[],
@@ -50,5 +57,4 @@
     });
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
 <slot></slot>

@@ -1,10 +1,10 @@
 <svelte:options tag="mc-navlink" />
 
 <script>
+        import {useCSS} from '../helper/styles.js';
+	useCSS();
 </script>
 
-<li class="flex relative h-full w-full p-4 hover:bg-primary">
+<li class="flex justify-center relative p-4 hover:bg-primary">
         <slot></slot>
 </li>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />

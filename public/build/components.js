@@ -1071,7 +1071,7 @@ var components = (function () {
 
     			this.c = noop;
     			attr_dev(link0, "rel", "stylesheet");
-    			attr_dev(link0, "href", /omni-cms/app.css");
+    			attr_dev(link0, "href", /omni-cms/main.css");
     			add_location(link0, file$k, 58, 0, 1394);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/fontawesome/css/all.min.css");
@@ -1476,7 +1476,7 @@ var components = (function () {
 
     			this.c = noop;
     			attr_dev(link0, "rel", "stylesheet");
-    			attr_dev(link0, "href", /omni-cms/app.css");
+    			attr_dev(link0, "href", /omni-cms/main.css");
     			add_location(link0, file$j, 61, 0, 1681);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/fontawesome/css/all.min.css");
@@ -1823,7 +1823,7 @@ var components = (function () {
     			t3 = text(/*description*/ ctx[1]);
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$i, 7, 0, 118);
     			attr_dev(p0, "class", "p-5 bg-secondary text-white");
     			add_location(p0, file$i, 11, 8, 262);
@@ -2107,7 +2107,7 @@ var components = (function () {
     			span1 = element("span");
     			this.c = noop;
     			attr_dev(link0, "rel", "stylesheet");
-    			attr_dev(link0, "href", /omni-cms/app.css");
+    			attr_dev(link0, "href", /omni-cms/main.css");
     			add_location(link0, file$h, 64, 0, 1738);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "/fontawesome/css/all.min.css");
@@ -3151,7 +3151,7 @@ var components = (function () {
     function instance$g($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('mc-navbar', slots, []);
-    	let { css = /omni-cms/app.css" } = $$props;
+    	let { css = /omni-cms/main.css" } = $$props;
     	const writable_props = ['css'];
 
     	Object.keys($$props).forEach(key => {
@@ -3247,7 +3247,7 @@ var components = (function () {
     			slot1 = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$f, 5, 0, 62);
     			attr_dev(slot0, "name", "mobile");
     			add_location(slot0, file$f, 11, 16, 298);
@@ -3524,7 +3524,7 @@ var components = (function () {
     	let active = false;
     	let button;
     	let { title = "Menu" } = $$props;
-    	let { css = /omni-cms/app.css" } = $$props;
+    	let { css = /omni-cms/main.css" } = $$props;
 
     	function setActive() {
     		console.log(active);
@@ -3675,7 +3675,7 @@ var components = (function () {
     			attr_dev(li, "class", "relative h-full p-4 hover:bg-primary");
     			add_location(li, file$d, 5, 0, 62);
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$d, 9, 0, 145);
     		},
     		l: function claim(nodes) {
@@ -3867,7 +3867,7 @@ var components = (function () {
     			a2.textContent = "Read Article";
     			this.c = noop;
     			attr_dev(link0, "rel", "stylesheet");
-    			attr_dev(link0, "href", /omni-cms/app.css");
+    			attr_dev(link0, "href", /omni-cms/main.css");
     			add_location(link0, file$c, 21, 0, 469);
     			attr_dev(link1, "rel", "stylesheet");
     			attr_dev(link1, "href", "fontawesome/css/all.min.css");
@@ -4358,7 +4358,7 @@ var components = (function () {
     			attr_dev(div1, "class", "bg-gray-100 m-2 shadow-lg p-5");
     			add_location(div1, file$b, 69, 0, 2585);
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$b, 93, 0, 3381);
     		},
     		l: function claim(nodes) {
@@ -4615,7 +4615,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$a, 54, 0, 1772);
     			add_location(slot, file$a, 55, 0, 1815);
     		},
@@ -4784,7 +4784,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$9, 31, 0, 870);
     			add_location(slot, file$9, 33, 1, 1053);
     			attr_dev(button, "class", button_class_value = "transition-colors h-24 w-64 block " + /*customClass*/ ctx[1] + " " + (/*active*/ ctx[0] === "true" ? "bg-primary" : ""));
@@ -5013,7 +5013,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$8, 28, 0, 822);
     			attr_dev(slot, "class", slot_class_value = /*active*/ ctx[0] === "true" ? "" : "hidden");
     			add_location(slot, file$8, 29, 0, 865);
@@ -5210,7 +5210,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$7, 6, 0, 65);
     			add_location(slot, file$7, 9, 4, 174);
     			attr_dev(div, "class", "shadow-xl rounded w-full bg-blue-200 p-5 m-5");
@@ -5301,7 +5301,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$6, 62, 0, 2145);
     			add_location(slot, file$6, 63, 0, 2188);
     		},
@@ -5573,7 +5573,7 @@ var components = (function () {
     			if_block_anchor = empty();
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$5, 41, 0, 1041);
     		},
     		l: function claim(nodes) {
@@ -5827,7 +5827,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$4, 5, 0, 62);
     			add_location(slot, file$4, 8, 4, 133);
     			attr_dev(div, "class", "parent");
@@ -5925,7 +5925,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$3, 31, 0, 876);
     			add_location(slot, file$3, 33, 1, 973);
     			attr_dev(button, "class", /*customClass*/ ctx[0]);
@@ -6156,7 +6156,7 @@ var components = (function () {
     			slot = element("slot");
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$2, 31, 0, 876);
     			add_location(slot, file$2, 33, 1, 973);
     			attr_dev(button, "class", /*customClass*/ ctx[0]);
@@ -6466,7 +6466,7 @@ var components = (function () {
 
     			this.c = noop;
     			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", /omni-cms/app.css");
+    			attr_dev(link, "href", /omni-cms/main.css");
     			add_location(link, file$1, 25, 0, 810);
     			attr_dev(ul, "class", "flex z-20");
     			add_location(ul, file$1, 26, 0, 853);
@@ -6908,7 +6908,7 @@ var components = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('mc-sidenav', slots, []);
     	let { path } = $$props;
-    	let { css = /omni-cms/app.css" } = $$props;
+    	let { css = /omni-cms/main.css" } = $$props;
     	let data;
 
     	async function getNav() {

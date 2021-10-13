@@ -3,6 +3,9 @@
 <script>
     import { get_current_component } from 'svelte/internal';
 	import { onMount} from 'svelte';
+    import {useCSS} from '../helper/styles.js';
+	useCSS();
+
 	const component = get_current_component();
     let location = 0;
 
@@ -60,5 +63,4 @@
     });
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
 <slot></slot>

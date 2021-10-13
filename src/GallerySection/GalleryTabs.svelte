@@ -3,7 +3,11 @@
 <script>
 	import { get_current_component } from 'svelte/internal';
 	import { onMount, tick } from 'svelte';
-	const component = get_current_component();
+    import {useCSS,useIcons} from '../helper/styles.js';
+	useCSS();
+    useIcons();
+	
+    const component = get_current_component();
 
 	let content;
     export let active = "0";
@@ -23,7 +27,6 @@
     }
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
 <ul class="flex z-20">
     {#each items as item,i}
         <li on:click={() => goToItem(i)}>

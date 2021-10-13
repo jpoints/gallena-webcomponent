@@ -2,6 +2,10 @@
 
 <script>
     import { onMount } from 'svelte';
+    import {useCSS,useIcons} from '../helper/styles.js';
+	useCSS();
+    useIcons();
+
     export let data = "[]";
     export let src = null;
     let current;
@@ -59,9 +63,6 @@
     }
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
-   
     <div class="h-48 w-full md:w-full md:h-96 bg-black">
                 <div class="flex justify-center h-full w-full">
                     <div class="flex justify-center items-center w-13 bg-primary text-white">
@@ -84,7 +85,7 @@
                     </div>
                 </div>
     </div>
-    <ul class="flex w-full justify-center bg-secondary p-1">
+    <ul class="flex w-full m-0 p-0 py-5 justify-center bg-secondary list-none">
         {#each data as item,i}
             <li>
                 <button class="rounded-full w-3 h-3 m-1 {location === i ? 'bg-primary' : 'bg-white'}" on:click={() => setItem(i)}></button>

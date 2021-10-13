@@ -3,6 +3,10 @@
 
 <script>
    import { onMount } from 'svelte';
+   import {useCSS} from '../helper/styles.js';
+   useCSS();
+ 
+
    export let path;
    export let css = "/omni-cms/app.css";
    let data;
@@ -27,24 +31,23 @@
     })
 
 </script>
-<link rel="stylesheet" href="{css}" />
 
 {#await data}
         <div class="fadeInLong">
-        <ul class="animate-pulse w-full flex flex-col space-y-4">
-                <li class="h-4 bg-blue-400 rounded w-3/4"></li>
-                <li class="h-4 bg-blue-400 rounded w-3/6"></li>
-                <li class="h-4 bg-blue-400 rounded w-4/6"></li>
-                <li class="h-4 bg-blue-400 rounded w-3/4"></li>
-                <li class="h-4 bg-blue-400 rounded w-3/6"></li>
-        </ul>
+            <ul class="animate-pulse list-none w-full flex flex-col space-y-4">
+                    <li class="h-4 bg-blue-400 rounded w-3/4"></li>
+                    <li class="h-4 bg-blue-400 rounded w-3/6"></li>
+                    <li class="h-4 bg-blue-400 rounded w-4/6"></li>
+                    <li class="h-4 bg-blue-400 rounded w-3/4"></li>
+                    <li class="h-4 bg-blue-400 rounded w-3/6"></li>
+            </ul>
         </div>
 {:then data}
-         <ul class="w-full flex flex-col justify-center fadeIn">
+         <ul class=" list-none space-y-2 w-full flex flex-col justify-start fadeIn">
             {@html data}
         </ul>
 {:catch data}
-         <ul class="w-full flex flex-col justify-center fadeIn">
+         <ul class="list-none w-full flex flex-col justify-center fadeIn">
             <li><a href="/">Link 1</a></li>
             <li><a href="/">Link 2</a></li>
             <li><a href="/">Link 3</a></li>
@@ -57,7 +60,7 @@
         to {opactiy:1}
     }
     .fadeIn{
-        animation: fade 500ms;
+        animation: fade 200ms;
     }
     @keyframes fadeLong {
         0%, 100% {

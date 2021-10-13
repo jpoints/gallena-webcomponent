@@ -1,6 +1,9 @@
 <svelte:options tag="mc-navdropdown" />
 
 <script>
+    import {useCSS,useIcons} from '../helper/styles.js';
+	useCSS();
+    useIcons();
     import {clickOutside} from '../helper/clickoutside.js';
     let active = false;
     let button;
@@ -26,9 +29,9 @@
 	}
 </script>
 
-<li class="relative h-full p-4 {active ? 'border-white bg-primary' : null} hover:bg-primary" on:blur={handleClickOutside}>
-	<div class="h-full block" on:click={setActive}>
-        <button bind:this={button} class="flex justify-center border-solid border-b-2 border-transparent text-white w-36 w-full text-center">  
+<li class="relative {active ? 'border-white bg-primary' : null} hover:bg-primary" on:blur={handleClickOutside}>
+	<div class="" on:click={setActive}>
+        <button bind:this={button} class="flex justify-center text-white w-36 w-full p-4 h-full text-center">  
             {title}
             <i class="fas {active ? 'fa-chevron-down' : 'fa-chevron-up'} px-2 pt-1 text-sm"></i>
         </button>
@@ -37,7 +40,4 @@
         <slot class="w-full shadow"></slot>
     </div>
 </li>
-
-<link rel="stylesheet" href="{css}" />
-<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
 

@@ -3,8 +3,10 @@
 <script>
 	import { get_current_component } from 'svelte/internal';
 	import { onMount, tick } from 'svelte';
-	const component = get_current_component();
+	import {useCSS} from '../helper/styles.js';
+	useCSS();
 
+	const component = get_current_component();
 
 	export let test = "before";
 	export let active = "false";
@@ -29,7 +31,6 @@
 	}
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
 <button class='{customClass}' on:click={setActive}>
 	<slot></slot>
 </button>

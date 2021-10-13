@@ -3,11 +3,15 @@
 <script>
 	import { get_current_component } from 'svelte/internal';
 	import { onMount, tick } from 'svelte';
+	import {useCSS} from '../helper/styles.js';
+	useCSS();
+
 	const component = get_current_component();
 
 	export let test = "before";
 	export let active = "false";
 	export let name ="";
+	let cssfile = "/omni-cms/app.css";
 
 	let content;
 
@@ -26,7 +30,6 @@
 	}
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
 <slot class='{active === "true" ? "" : "hidden"}'></slot>
 
 <style>

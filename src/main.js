@@ -22,8 +22,14 @@ import PrevSlide from './GallerySection/PrevSlide.svelte';
 import GalleryTabs from './GallerySection/GalleryTabs.svelte';
 
 import SideNav from './sidenav/SideNav.svelte';
+import SideNavJson from './sidenav/SideNavJson.svelte';
+
 
 import DesignSidePanel from './design-ui/Sidepanel.svelte';
+
+import ScrollTop from './scrollTop/scrollTop.svelte';
+
+import AccordingRow from './accordion/AccordionRow.svelte'
 
 
 export default {
@@ -47,5 +53,8 @@ export default {
     PrevSlide,
     GalleryTabs,
     SideNav,
-    DesignSidePanel
+    SideNavJson,
+    DesignSidePanel,
+    ScrollTop,
+    AccordingRow
 }

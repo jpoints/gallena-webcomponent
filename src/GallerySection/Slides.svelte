@@ -1,9 +1,9 @@
 <svelte:options tag="mc-slides" />
 
 <script> 
+ import {useCSS} from '../helper/styles.js';
+	useCSS();
 </script>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
 
 <div class="parent">
     <slot></slot>       

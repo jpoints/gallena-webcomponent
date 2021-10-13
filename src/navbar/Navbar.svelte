@@ -1,15 +1,14 @@
 <svelte:options tag="mc-navbar" />
 
 <script>
-    export let css = "/omni-cms/app.css";
+    import {useCSS} from '../helper/styles.js';
+	useCSS();
 </script>
-
-<link rel="stylesheet" href="{css}" />
 
 <section class="bg-secondary text-white w-full">
 		<div class="flex flex-row items-center mx-auto max-w-7xl">
-           <mc-navdropdown class="md:hidden list-none" title="Menu">
-                 <ul class="text-secondary text-xl w-full">
+           <mc-navdropdown class="md:hidden" title="Menu">
+                 <ul class="text-secondary list-none text-xl w-full">
                     <mc-navlink>
                         <a href="#" >About</a>
                     </mc-navlink>
@@ -27,7 +26,7 @@
                     </mc-navlink>
                 </ul>
             </mc-navdropdown>
-        <ul class="hidden md:flex">
+        <ul class="hidden md:flex list-none">
             <mc-navdropdown title="ABOUT">
                 <div class="flex flex-col w-full">
                     <div class="text-2xl pb-3">About</div>

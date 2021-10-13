@@ -3,16 +3,15 @@
 <script>
 	import { get_current_component } from 'svelte/internal';
 	import { onMount, tick } from 'svelte';
+	import {useCSS} from '../helper/styles.js';
+	useCSS();
+
 	const component = get_current_component();
 
-
-	export let test = "before";
 	export let active = "false";
 	let customClass;
 	export { customClass as class };
 	export let name;
-
-	let content;
 
 	onMount(async () => {
 		await tick();//I want this to fire after other components load
@@ -29,8 +28,7 @@
 	}
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
-<button class='transition-colors h-24 w-64 block {customClass} {active === "true" ? "bg-primary" : ""}' on:click={setActive} name='test'>
+<button class='transition-colors h-24 w-64 block {customClass} {active === "true" ? "bg-primary text-white" : ""}' on:click={setActive} name='test'>
 	<slot></slot>
 </button>
 

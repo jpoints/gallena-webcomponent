@@ -1,11 +1,10 @@
 <svelte:options tag="mc-card" />
 
 <script>
-    
+    import {useCSS} from './helper/styles.js';
+    useCSS();
 </script>
 
-<link rel="stylesheet" href="/omni-cms/app.css" />
-
-<div class="shadow-xl rounded w-full bg-blue-200 p-5 m-5">
+<div class="shadow-xl rounded w-full bg-gray-200 p-5 m-5">
     <slot></slot>
 </div>

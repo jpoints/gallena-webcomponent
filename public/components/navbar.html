@@ -7,7 +7,7 @@
 	<title>Svelte app</title>
 
 	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link href="/omni-cms/app.css" rel="stylesheet">
+	<link href="/omni-cms/main.css" rel="stylesheet">
 	<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
 
 
@@ -23,7 +23,7 @@
         <p>Nav bar using the drop down element</p>
         <section class="bg-secondary text-white w-full">
             <div class="flex flex-row items-center">
-                <ul class="flex">
+                <ul class="flex list-none">
                     <mc-navdropdown title="ABOUT">
                         <div class="flex flex-col w-full">
                             <div class="text-2xl pb-3">About</div>
@@ -136,7 +136,7 @@
         <p>Defining a simple navbar, links only</p>
         <section class="bg-secondary text-white w-full">
             <div class="flex flex-row items-center">
-                <ul class="flex">
+                <ul class="flex text-xl">
                     <mc-navlink>
                         <a href="#" class="text-white">About</a>
                     </mc-navlink>
@@ -150,7 +150,7 @@
                         <a href="#" class="text-white">Athletics</a>
                     </mc-navlink>
                     <mc-navlink>
-                        <a href="#" class="text-white">NEWS</a>
+                        <a href="#" class="text-white">News</a>
                     </mc-navlink>
                 </ul>
             </div>
@@ -166,7 +166,7 @@
         <p>Mobile and Desktop slotted navbar</p>
         <mc-navbar2 class="w-full">
             <div slot="mobile">
-                <ul class="text-secondary text-xl w-full">
+                <ul class="text-secondary text-xl w-full list-none">
                     <mc-navlink>
                         <a href="#" >About</a>
                     </mc-navlink>
@@ -185,7 +185,7 @@
                 </ul>
             </div>
             <div slot="desktop">
-                <ul class="flex">
+                <ul class="flex list-none">
                     <mc-navdropdown title="ABOUT">
                         <div class="flex flex-col w-full">
                             <div class="text-2xl pb-3">About</div>

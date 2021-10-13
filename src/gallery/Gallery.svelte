@@ -3,6 +3,10 @@
 <script>
     import { onMount } from 'svelte';
 
+    import {useCSS,useIcons} from '../helper/styles.js';
+	useCSS();
+    useIcons();
+
     let location = 0;
     export let data = [];   
     export let path = null;
@@ -51,11 +55,7 @@
         timer = setTimer()
     }
 </script>
-
-<link rel="stylesheet" href="/omni-cms/app.css" />
-<link href="/omni-cms/fontawesome/css/all.min.css" rel="stylesheet"/>
-
-   
+  
     <div class="parent h-48 md:h-96 bg-black">
         {#each data as item,index}
         <div class="child {location === index ? 'fadeIn' : 'fadeOut'}" style='background-image: url({item.url});background-size: cover'>
@@ -89,10 +89,10 @@
     </div>
     
      
-    <ul class="flex w-full justify-center">
+    <ul class="flex w-full list-none p-0 justify-center">
         {#each data as item,i}
             <li>
-                <button class="rounded-full w-3 h-3 m-1 {location === i ? 'bg-primary' : 'bg-secondary'}" on:click={() => setItem(i)}></button>
+                <button class="rounded-full w-3 h-3 m-1 border-gray-300  border     {location === i ? 'bg-primary' : 'bg-secondary'}" on:click={() => setItem(i)}></button>
             </li>
         {/each}
     </ul>
